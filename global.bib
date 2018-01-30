@@ -33,10 +33,24 @@
 }
 
 @misc{gcc:software,
-	title = "GNU Compiler Collection ({\texttt gcc})",
+	title = "{G}{N}{U} {C}ompiler {C}ollection ({\texttt gcc})",
 	howpublished = "\\{\tt http://gcc.gnu.org}",
-	key = "GNU Compiler Collection ({\texttt gcc})"
+	key = "{G}{N}{U} {C}ompiler {C}ollection ({\texttt gcc})",
 }
+
+@misc{hoh:software,
+	title = "{H}o{H} Instructional and Research OS",
+        howpublished = "\\{\tt http://www.cse.iitd.ernet.in/~sbansal/os/hohlabs/}",
+	key = "{H}o{H} Instructional and Research OS",
+}
+
+@misc{llvm:software,
+	title = "The {L}{L}{V}{M} {C}ompiler {I}nfrastructure {P}roject",
+	howpublished = "\\{\tt http://llvm.org}",
+	key = "The {L}{L}{V}{M} {C}ompiler {I}nfrastructure {P}roject",
+}
+
+
 
 @inproceedings{ gso:pldi92,
   author = "{Torbj\"orn} Granlund and Richard Kenner",
@@ -291,6 +305,12 @@
   journal = "Microprocessor Report",
   month = "February",
   year = "2000"
+}
+
+@techreport{souper17,
+  author = "Sasnauskas, Raimondas and Chen, Yang and Collingbourne, Peter and Ketema, Jeroen and Taneja, Jubi and Regehr, John",
+  title = "{S}ouper: {A} {S}ynthesizing {S}uperoptimizer",
+  URL = "{\tt https://arxiv.org/abs/1711.04422}",
 }
 
 @techreport{ transmeta_crusoe:chip,
@@ -1195,6 +1215,41 @@
   publisher = {ACM},
   address = {New York, NY, USA},
   keywords = {concurrency, race conditions, randomized algorithms, testing},
+}
+
+@inproceedings{exokernel,
+ author = {Engler, D. R. and Kaashoek, M. F. and O'Toole,Jr., J.},
+ title = {Exokernel: An Operating System Architecture for Application-level Resource Management},
+ booktitle = {Proceedings of the Fifteenth ACM Symposium on Operating Systems Principles},
+ series = {SOSP '95},
+ year = {1995},
+ isbn = {0-89791-715-4},
+ location = {Copper Mountain, Colorado, USA},
+ pages = {251--266},
+ numpages = {16},
+ url = {http://doi.acm.org/10.1145/224056.224076},
+ doi = {10.1145/224056.224076},
+ acmid = {224076},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@inproceedings{barrelfish,
+ author = {Baumann, Andrew and Barham, Paul and Dagand, Pierre-Evariste and Harris, Tim and Isaacs, Rebecca and Peter, Simon and Roscoe, Timothy and Sch\"{u}pbach, Adrian and Singhania, Akhilesh},
+ title = {The Multikernel: A New OS Architecture for Scalable Multicore Systems},
+ booktitle = {Proceedings of the ACM SIGOPS 22Nd Symposium on Operating Systems Principles},
+ series = {SOSP '09},
+ year = {2009},
+ isbn = {978-1-60558-752-3},
+ location = {Big Sky, Montana, USA},
+ pages = {29--44},
+ numpages = {16},
+ url = {http://doi.acm.org/10.1145/1629575.1629579},
+ doi = {10.1145/1629575.1629579},
+ acmid = {1629579},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {message passing, multicore processors, scalability},
 }
 
 @article{bessey:coverity:acmcomm10,
@@ -2948,4 +3003,482 @@ month={Sept},
  keywords = {automatic proof generation, compilation correctness, formal translation contract, proof checking, translation validation},
 }
 
+@article{l4,
+ author = {Liedtke, Jochen},
+ title = {Toward Real Microkernels},
+ journal = {Commun. ACM},
+ issue_date = {Sept. 1996},
+ volume = {39},
+ number = {9},
+ month = sep,
+ year = {1996},
+ issn = {0001-0782},
+ pages = {70--77},
+ numpages = {8},
+ url = {http://doi.acm.org/10.1145/234215.234473},
+ doi = {10.1145/234215.234473},
+ acmid = {234473},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
 
+@inproceedings{Bansal:2006:AGP:1168857.1168906,
+ author = {Bansal, Sorav and Aiken, Alex},
+ title = {Automatic Generation of Peephole Superoptimizers},
+ booktitle = {Proceedings of the 12th International Conference on Architectural Support for Programming Languages and Operating Systems},
+ series = {ASPLOS XII},
+ year = {2006},
+ isbn = {1-59593-451-0},
+ location = {San Jose, California, USA},
+ pages = {394--403},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/1168857.1168906},
+ doi = {10.1145/1168857.1168906},
+ acmid = {1168906},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {code selection, peephole optimization, superoptimization},
+}
+
+@article{singularity,
+ author = {Hunt, Galen C. and Larus, James R.},
+ title = {Singularity: Rethinking the Software Stack},
+ journal = {SIGOPS Oper. Syst. Rev.},
+ issue_date = {April 2007},
+ volume = {41},
+ number = {2},
+ month = apr,
+ year = {2007},
+ issn = {0163-5980},
+ pages = {37--49},
+ numpages = {13},
+ url = {http://doi.acm.org/10.1145/1243418.1243424},
+ doi = {10.1145/1243418.1243424},
+ acmid = {1243424},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {hardware protection domains, manifest-based programs (MBPs), operating systems, program specification, program verification, safe programming languages, sealed kernel, sealed process architecture, software-isolated processes (SIPs), unsafe code tax},
+}
+
+@inproceedings{tockos,
+ author = {Levy, Amit and Campbell, Bradford and Ghena, Branden and Giffin, Daniel B. and Pannuto, Pat and Dutta, Prabal and Levis, Philip},
+ title = {Multiprogramming a 64kB Computer Safely and Efficiently},
+ booktitle = {Proceedings of the 26th Symposium on Operating Systems Principles},
+ series = {SOSP '17},
+ year = {2017},
+ isbn = {978-1-4503-5085-3},
+ location = {Shanghai, China},
+ pages = {234--251},
+ numpages = {18},
+ url = {http://doi.acm.org/10.1145/3132747.3132786},
+ doi = {10.1145/3132747.3132786},
+ acmid = {3132786},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@article{unicorn,
+ author = {Beri, Tarun and Bansal, Sorav and Kumar, Subodh},
+ title = {The Unicorn Runtime: Efficient Distributed Shared Memory Programming for Hybrid CPU-GPU Clusters},
+ journal = {IEEE Trans. Parallel Distrib. Syst.},
+ issue_date = {May 2017},
+ volume = {28},
+ number = {5},
+ month = may,
+ year = {2017},
+ issn = {1045-9219},
+ pages = {1518--1534},
+ numpages = {17},
+ url = {https://doi.org/10.1109/TPDS.2016.2616314},
+ doi = {10.1109/TPDS.2016.2616314},
+ acmid = {3083912},
+ publisher = {IEEE Press},
+ address = {Piscataway, NJ, USA},
+}
+
+@INPROCEEDINGS{ipdps15,
+author={T. Beri and S. Bansal and S. Kumar},
+booktitle={2015 IEEE International Parallel and Distributed Processing Symposium},
+title={A Scheduling and Runtime Framework for a Cluster of Heterogeneous Machines with Multiple Accelerators},
+year={2015},
+volume={},
+number={},
+pages={146-155},
+keywords={graphics processing units;parallel processing;resource allocation;scheduling;CPU+GPU cluster programming;accelerator;data transfer;graphics processing unit;heterogeneous machine;high-performance computing;load balancing;runtime framework;scheduling framework;task allocation;transaction style bulk-synchronous semantics;Data transfer;Graphics processing units;Kernel;Message systems;Programming;Runtime;Subscriptions;Heterogeneous Architectures;High Performance Computing;Hybrid CPU-GPU Clusters;Multi Scheduling;Work Stealing},
+doi={10.1109/IPDPS.2015.12},
+ISSN={1530-2075},
+month={May},
+}
+
+@INPROCEEDINGS{prosteal,
+author={T. Beri and S. Bansal and S. Kumar},
+booktitle={2015 IEEE International Parallel and Distributed Processing Symposium Workshop},
+title={ProSteal: A Proactive Work Stealer for Bulk Synchronous Tasks Distributed on a Cluster of Heterogeneous Machines with Multiple Accelerators},
+year={2015},
+volume={},
+number={},
+pages={17-26},
+keywords={graphics processing units;parallel programming;resource allocation;shared memory systems;GPUs;ProSteal;Unicorn;bulk synchronous tasks;compute-communication overlap;half steal strategy;healthy steal success rate;heterogeneous machines;load balancing technique;many-core accelerators;multiple CPUs;multiple accelerators;proactive work stealer;random victim selection;remote data transfers;shared memory parallel programming;termination detection;Convolution;Data transfer;Graphics processing units;Load management;Matrix decomposition;Performance evaluation;Pipelines;Heterogeneous Architectures;High Performance Computing;Hybrid CPU-GPU Clusters;Multi Scheduling;Work Stealing},
+doi={10.1109/IPDPSW.2015.7},
+ISSN={},
+month={May},
+}
+
+@inproceedings{fast04,
+ author = {Bansal, Sorav and Modha, Dharmendra S.},
+ title = {CAR: Clock with Adaptive Replacement},
+ booktitle = {Proceedings of the 3rd USENIX Conference on File and Storage Technologies},
+ series = {FAST '04},
+ year = {2004},
+ location = {San Francisco, CA},
+ pages = {187--200},
+ numpages = {14},
+ url = {http://dl.acm.org/citation.cfm?id=1096673.1096699},
+ acmid = {1096699},
+ publisher = {USENIX Association},
+ address = {Berkeley, CA, USA},
+} 
+
+@article{winet06,
+  author    = {Sorav Bansal and
+               Rajeev Shorey and
+               Rajeev Gupta and
+               Archan Misra},
+  title     = {Energy Efficiency and Capacity for {TCP} Traffic in Multi-Hop Wireless
+               Networks},
+  journal   = {Wireless Networks},
+  volume    = {12},
+  number    = {1},
+  pages     = {5--21},
+  year      = {2006},
+  url       = {https://doi.org/10.1007/s11276-006-6146-9},
+  doi       = {10.1007/s11276-006-6146-9},
+  timestamp = {Sat, 27 May 2017 14:24:30 +0200},
+  biburl    = {http://dblp.org/rec/bib/journals/winet/BansalSGM06},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@inproceedings{broadnets04,
+  author    = {Arup Acharya and
+               Archan Misra and
+               Sorav Bansal},
+  title     = {Design and Analysis of a Cooperative Medium Access Scheme for Wireless
+               Mesh Networks},
+  booktitle = {1st International Conference on Broadband Networks {(BROADNETS} 2004),
+               25-29 October 2004, San Jose, CA, {USA}},
+  pages     = {621--631},
+  year      = {2004},
+  url       = {https://doi.org/10.1109/BROADNETS.2004.29},
+  doi       = {10.1109/BROADNETS.2004.29},
+  timestamp = {Fri, 19 May 2017 01:25:51 +0200},
+  biburl    = {http://dblp.org/rec/bib/conf/broadnets/AcharyaMB04},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@inproceedings{wcnc,
+  author    = {Sorav Bansal and
+               Rajeev Shorey and
+               Arzad Alam Kherani},
+  title     = {Performance of {TCP} and {UDP} protocols in multi-hop multi-rate wireless
+               networks},
+  booktitle = {2004 {IEEE} Wireless Communications and Networking Conference , {WCNC}
+               2004, Atlanta, Georgia, USA, 21-25 March 2004},
+  pages     = {231--236},
+  year      = {2004},
+  url       = {https://doi.org/10.1109/WCNC.2004.1311548},
+  doi       = {10.1109/WCNC.2004.1311548},
+  timestamp = {Wed, 24 May 2017 08:29:05 +0200},
+  biburl    = {http://dblp.org/rec/bib/conf/wcnc/BansalSK04},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@article{wc03,
+  author    = {Arup Acharya and
+               Archan Misra and
+               Sorav Bansal},
+  title     = {High-performance architectures for IP-based multihop 802.11 networks},
+  journal   = {{IEEE} Wireless Commun.},
+  volume    = {10},
+  number    = {5},
+  pages     = {22--28},
+  year      = {2003},
+  url       = {https://doi.org/10.1109/MWC.2003.1241091},
+  doi       = {10.1109/MWC.2003.1241091},
+  timestamp = {Sat, 27 May 2017 14:23:10 +0200},
+  biburl    = {http://dblp.org/rec/bib/journals/wc/AcharyaMB03},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@inproceedings{macap,
+  author    = {Arup Acharya and
+               Archan Misra and
+               Sorav Bansal},
+  title     = {{MACA-P:} {A} {MAC} for Concurrent Transmissions in Multi-Hop Wireless
+               Networks},
+  booktitle = {Proceedings of the First {IEEE} International Conference on Pervasive
+               Computing and Communications (PerCom'03), March 23-26, 2003, Fort
+               Worth, Texas, {USA}},
+  pages     = {505--508},
+  year      = {2003},
+  url       = {https://doi.org/10.1109/PERCOM.2003.1192780},
+  doi       = {10.1109/PERCOM.2003.1192780},
+  timestamp = {Tue, 23 May 2017 01:10:48 +0200},
+  biburl    = {http://dblp.org/rec/bib/conf/percom/AcharyaMB03},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@inproceedings{wcnc03,
+  author    = {Sorav Bansal and
+               Rajeev Shorey and
+               Archan Misra},
+  title     = {Comparing the routing energy overheads of ad-hoc routing protocols},
+  booktitle = {2003 {IEEE} Wireless Communications and Networking, {WCNC} 2003, New
+               Orleans, LA, USA, 16-20 March, 2003},
+  pages     = {1155--1161},
+  year      = {2003},
+  url       = {https://doi.org/10.1109/WCNC.2003.1200534},
+  doi       = {10.1109/WCNC.2003.1200534},
+  timestamp = {Wed, 24 May 2017 08:29:13 +0200},
+  biburl    = {http://dblp.org/rec/bib/conf/wcnc/BansalSM03},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+
+
+@article{ocean,
+  author    = {Sorav Bansal and
+               Mary Baker},
+  title     = {Observation-based Cooperation Enforcement in Ad Hoc Networks},
+  journal   = {CoRR},
+  volume    = {cs.NI/0307012},
+  year      = {2003},
+  url       = {http://arxiv.org/abs/cs.NI/0307012},
+  timestamp = {Wed, 07 Jun 2017 14:42:19 +0200},
+  biburl    = {http://dblp.org/rec/bib/journals/corr/cs-NI-0307012},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+
+@inproceedings{globecom02,
+  author    = {Sorav Bansal and
+               Rajeev Shorey and
+               Shobhit Chugh and
+               Anurag Goel and
+               Kapil Kumar and
+               Archan Misra},
+  title     = {The capacity of multi-hop wireless networks with {TCP} regulated traffic},
+  booktitle = {Proceedings of the Global Telecommunications Conference, 2002. {GLOBECOM}
+               '02, Taipei, Taiwan, 17-21 November, 2002},
+  pages     = {133--137},
+  year      = {2002},
+  url       = {https://doi.org/10.1109/GLOCOM.2002.1188056},
+  doi       = {10.1109/GLOCOM.2002.1188056},
+  timestamp = {Tue, 23 May 2017 01:12:57 +0200},
+  biburl    = {http://dblp.org/rec/bib/conf/globecom/BansalSCGKM02},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@inproceedings{infocom02,
+  author    = {Imran Ali and
+               Rajeev Gupta and
+               Sorav Bansal and
+               Archan Misra and
+               Ashu Razdan and
+               Rajeev Shorey},
+  title     = {Energy Efficiency and Throughput for {TCP} Traffic in Multi-Hop Wireless
+               Networks},
+  booktitle = {Proceedings {IEEE} {INFOCOM} 2002, The 21st Annual Joint Conference
+               of the {IEEE} Computer and Communications Societies, New York, USA,
+               June 23-27, 2002},
+  pages     = {210--219},
+  year      = {2002},
+  url       = {https://doi.org/10.1109/INFCOM.2002.1019262},
+  doi       = {10.1109/INFCOM.2002.1019262},
+  timestamp = {Tue, 16 May 2017 16:26:31 +0200},
+  biburl    = {http://dblp.org/rec/bib/conf/infocom/AliGBMRS02},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@inproceedings{wowmom02,
+  author    = {Arup Acharya and
+               Archan Misra and
+               Sorav Bansal},
+  title     = {A label-switching packet forwarding architecture for multi-hop wireless
+               LANs},
+  booktitle = {The Fifth International Workshop on Wireless Mobile Multimedia, {WOWMOM}
+               2002, Atlanta, Georgia, 28 September 2002, Proceedings},
+  pages     = {33--40},
+  year      = {2002},
+  url       = {http://doi.acm.org/10.1145/570790.570797},
+  doi       = {10.1145/570790.570797},
+  timestamp = {Fri, 26 May 2017 00:50:21 +0200},
+  biburl    = {http://dblp.org/rec/bib/conf/wowmom/AcharyaMB02},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@inproceedings{hscc01,
+  author    = {Arup Acharya and
+               Archan Misra and
+               Sorav Bansal},
+  title     = {A label-switching packet forwarding architecture for multi-hop wireless
+               LANs},
+  booktitle = {The Fifth International Workshop on Wireless Mobile Multimedia, {WOWMOM}
+               2002, Atlanta, Georgia, 28 September 2002, Proceedings},
+  pages     = {33--40},
+  year      = {2002},
+  url       = {http://doi.acm.org/10.1145/570790.570797},
+  doi       = {10.1145/570790.570797},
+  timestamp = {Fri, 26 May 2017 00:50:21 +0200},
+  biburl    = {http://dblp.org/rec/bib/conf/wowmom/AcharyaMB02},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@inproceedings{comsnets11,
+  author    = {Swati Sharma and
+               Huzur Saran and
+               Sorav Bansal},
+  title     = {An Empirical study of clock skew behavior in modern mobile and hand-held
+               devices},
+  booktitle = {Third International Conference on Communication Systems and Networks,
+               {COMSNETS} 2011, Bangalore, India, January 4-8, 2011},
+  pages     = {1--4},
+  year      = {2011},
+  url       = {https://doi.org/10.1109/COMSNETS.2011.5716494},
+  doi       = {10.1109/COMSNETS.2011.5716494},
+  timestamp = {Sun, 21 May 2017 00:20:52 +0200},
+  biburl    = {http://dblp.org/rec/bib/conf/comsnets/SharmaSB11},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+
+@inproceedings{issta13,
+  author    = {Sandeep Bindal and
+               Sorav Bansal and
+               Akash Lal},
+  title     = {Variable and thread bounding for systematic testing of multithreaded
+               programs},
+  booktitle = {International Symposium on Software Testing and Analysis, {ISSTA}
+               '13, Lugano, Switzerland, July 15-20, 2013},
+  pages     = {145--155},
+  year      = {2013},
+  url       = {http://doi.acm.org/10.1145/2483760.2483764},
+  doi       = {10.1145/2483760.2483764},
+  timestamp = {Fri, 03 Feb 2017 11:58:32 +0100},
+  biburl    = {http://dblp.org/rec/bib/conf/issta/BindalBL13},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@inproceedings{dnis11,
+  author    = {Abhishek Gupta and
+               Jatin Kumar and
+               Daniel J. Mathew and
+               Sorav Bansal and
+               Subhashis Banerjee and
+               Huzur Saran},
+  title     = {Design and Implementation of the Workflow of an Academic Cloud},
+  booktitle = {Databases in Networked Information Systems - 7th International Workshop,
+               {DNIS} 2011, Aizu-Wakamatsu, Japan, December 12-14, 2011. Proceedings},
+  pages     = {16--25},
+  year      = {2011},
+  url       = {https://doi.org/10.1007/978-3-642-25731-5_2},
+  doi       = {10.1007/978-3-642-25731-5_2},
+  timestamp = {Wed, 17 May 2017 14:25:06 +0200},
+  biburl    = {http://dblp.org/rec/bib/conf/dnis/GuptaKMBBS11},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+
+
+@article{p4,
+ author = {Bosshart, Pat and Daly, Dan and Gibb, Glen and Izzard, Martin and McKeown, Nick and Rexford, Jennifer and Schlesinger, Cole and Talayco, Dan and Vahdat, Amin and Varghese, George and Walker, David},
+ title = {P4: Programming Protocol-independent Packet Processors},
+ journal = {SIGCOMM Comput. Commun. Rev.},
+ issue_date = {July 2014},
+ volume = {44},
+ number = {3},
+ month = jul,
+ year = {2014},
+ issn = {0146-4833},
+ pages = {87--95},
+ numpages = {9},
+ url = {http://doi.acm.org/10.1145/2656877.2656890},
+ doi = {10.1145/2656877.2656890},
+ acmid = {2656890},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {p4, protocol-independent, reconfigurability, sdn},
+} 
+
+@inproceedings{intermittent,
+  author = {Dahiya, Manjeet and Bansal, Sorav},
+  title = {Automatic Verification of Intermittent Systems},
+  booktitle = {Proceedings of the 19th International Conference on Verification, Model Checking, and Abstract Interpretation},
+  series = {VMCAI'18},
+  year = {2018},
+  location = {Los Angeles, CA},
+  numpages = {22},
+  howpublished = {http://www.cse.iitd.ac.in/$\sim$sbansal/pubs/intermittent.pdf},
+  publisher = {Springer-Verlag},
+} 
+
+@misc{aplas17_src_award,
+  title = {{A}{P}{L}{A}{S} 2017 {S}tudent {R}esearch {C}ompetition {F}irst {P}lace {A}ward awarded to {M}anjeet {D}ahiya for his work on ``{A}utomatic {V}erification of {I}ntermittent {S}ystems''},
+  howpublished = "\\{\tt https://www-aplas.github.io/SRC.html}",
+  key = {{A}{P}{L}{A}{S} 2017 {S}tudent {R}esearch {C}ompetition {F}irst {P}lace {A}ward awarded to {M}anjeet {D}ahiya},
+}
+
+@misc{llvm_passes,
+  title = {{L}{L}{V}{M} {A}nalysis and {T}ransformation {P}asses},
+  howpublished = "\\{\tt https://llvm.org/docs/Passes.html}",
+  key = {{L}{L}{V}{M} {A}nalysis and {T}ransformation {P}asses},
+}
+
+@inproceedings{aplas17,
+  author    = {Manjeet Dahiya and
+               Sorav Bansal},
+  title     = {Black-Box Equivalence Checking Across Compiler Optimizations},
+  booktitle = {Programming Languages and Systems - 15th Asian Symposium, {APLAS}
+               2017, Suzhou, China, November 27-29, 2017, Proceedings},
+  pages     = {127--147},
+  year      = {2017},
+  url       = {https://doi.org/10.1007/978-3-319-71237-6_7},
+  doi       = {10.1007/978-3-319-71237-6_7},
+  timestamp = {Mon, 20 Nov 2017 11:29:53 +0100},
+  biburl    = {http://dblp.org/rec/bib/conf/aplas/DahiyaB17},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@inproceedings{hvc17,
+  author    = {Manjeet Dahiya and
+               Sorav Bansal},
+  title     = {Modeling Undefined Behaviour Semantics for Checking Equivalence Across
+               Compiler Optimizations},
+  booktitle = {Hardware and Software: Verification and Testing - 13th International
+               Haifa Verification Conference, {HVC} 2017, Haifa, Israel, November
+               13-15, 2017, Proceedings},
+  pages     = {19--34},
+  year      = {2017},
+  url       = {https://doi.org/10.1007/978-3-319-70389-3_2},
+  doi       = {10.1007/978-3-319-70389-3_2},
+  timestamp = {Tue, 14 Nov 2017 14:54:55 +0100},
+  biburl    = {http://dblp.org/rec/bib/conf/hvc/DahiyaB17},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@inproceedings{synthesis_machine_code,
+ author = {Srinivasan, Venkatesh and Reps, Thomas},
+ title = {Synthesis of Machine Code from Semantics},
+ booktitle = {Proceedings of the 36th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+ series = {PLDI '15},
+ year = {2015},
+ isbn = {978-1-4503-3468-6},
+ location = {Portland, OR, USA},
+ pages = {596--607},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/2737924.2737960},
+ doi = {10.1145/2737924.2737960},
+ acmid = {2737960},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {CEGIS, IA-32 instruction set, Machine-code synthesis, SMT, divide-and-conquer},
+}
