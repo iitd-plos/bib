@@ -3513,3 +3513,176 @@ month={May},
 	howpublished = "\\{\tt http://www.cse.iitd.ac.in/$\sim$sbansal/bacus.pdf}",
 	key = "{P}4+{B}acus for developing high-performance software switches",
 }
+
+@book{dragonbook,
+ author = {Aho, Alfred V. and Lam, Monica S. and Sethi, Ravi and Ullman, Jeffrey D.},
+ title = {Compilers: Principles, Techniques, and Tools (2Nd Edition)},
+ year = {2006},
+ isbn = {0321486811},
+ publisher = {Addison-Wesley Longman Publishing Co., Inc.},
+ address = {Boston, MA, USA},
+}
+
+@book{sangiorgi_rutten,
+ author = {Sangiorgi, Davide and Rutten, Jan},
+ title = {Advanced Topics in Bisimulation and Coinduction},
+ year = {2011},
+ isbn = {1107004977, 9781107004979},
+ edition = {1st},
+ publisher = {Cambridge University Press},
+ address = {New York, NY, USA},
+}
+
+@inproceedings{tsvc,
+ author = {Maleki, Saeed and Gao, Yaoqing and Garzar\'{a}n, Maria J. and Wong, Tommy and Padua, David A.},
+ title = {An Evaluation of Vectorizing Compilers},
+ booktitle = {Proceedings of the 2011 International Conference on Parallel Architectures and Compilation Techniques},
+ series = {PACT '11},
+ year = {2011},
+ isbn = {978-0-7695-4566-0},
+ pages = {372--382},
+ numpages = {11},
+ url = {https://doi.org/10.1109/PACT.2011.68},
+ doi = {10.1109/PACT.2011.68},
+ acmid = {2121464},
+ publisher = {IEEE Computer Society},
+ address = {Washington, DC, USA},
+} 
+
+@inproceedings{semalign,
+ author = {Churchill, Berkeley and Padon, Oded and Sharma, Rahul and Aiken, Alex},
+ title = {Semantic Program Alignment for Equivalence Checking},
+ booktitle = {Proceedings of the 40th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+ series = {PLDI 2019},
+ year = {2019},
+ isbn = {978-1-4503-6712-7},
+ location = {Phoenix, AZ, USA},
+ pages = {1027--1040},
+ numpages = {14},
+ url = {http://doi.acm.org/10.1145/3314221.3314596},
+ doi = {10.1145/3314221.3314596},
+ acmid = {3314596},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {equivalence checking, verification},
+}
+
+@InProceedings{tvoc_cav05,
+author="Barrett, Clark
+and Fang, Yi
+and Goldberg, Benjamin
+and Hu, Ying
+and Pnueli, Amir
+and Zuck, Lenore",
+editor="Etessami, Kousha
+and Rajamani, Sriram K.",
+title="TVOC: A Translation Validator for Optimizing Compilers",
+booktitle="Computer Aided Verification",
+year="2005",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="291--295",
+abstract="We describe a tool called TVOC, that uses the translation validation approach to check the validity of compiler optimizations: for a given source program, TVOC proves the equivalence of the source code and the target code produced by running the compiler. There are two phases to the verification process: the first phase verifies loop transformations using the proof rule permute; the second phase verifies structure-preserving optimizations using the proof rule Validate. Verification conditions are validated using the automatic theorem prover CVC Lite.",
+isbn="978-3-540-31686-2"
+}
+
+@inproceedings{felsing14,
+ author = {Felsing, Dennis and Grebing, Sarah and Klebanov, Vladimir and R\"{u}mmer, Philipp and Ulbrich, Mattias},
+ title = {Automating Regression Verification},
+ booktitle = {Proceedings of the 29th ACM/IEEE International Conference on Automated Software Engineering},
+ series = {ASE '14},
+ year = {2014},
+ isbn = {978-1-4503-3013-8},
+ location = {Vasteras, Sweden},
+ pages = {349--360},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/2642937.2642987},
+ doi = {10.1145/2642937.2642987},
+ acmid = {2642987},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {formal methods, invariant generation, program equivalence, regression verification},
+} 
+
+@inproceedings{syncCHC,
+  author    = {Dmitry Mordvinov and Grigory Fedyukovich},
+  title     = {Synchronizing Constrained Horn Clauses},
+  booktitle = {LPAR-21. 21st International Conference on Logic for Programming, Artificial Intelligence and Reasoning},
+  editor    = {Thomas Eiter and David Sands},
+  series    = {EPiC Series in Computing},
+  volume    = {46},
+  pages     = {338--355},
+  year      = {2017},
+  publisher = {EasyChair},
+  bibsource = {EasyChair, https://easychair.org},
+  issn      = {2398-7340},
+  url       = {https://easychair.org/publications/paper/LlxW},
+  doi       = {10.29007/gr5c}
+}
+
+@InProceedings{CHCeq,
+author="De Angelis, Emanuele
+and Fioravanti, Fabio
+and Pettorossi, Alberto
+and Proietti, Maurizio",
+editor="Rival, Xavier",
+title="Relational Verification Through Horn Clause Transformation",
+booktitle="Static Analysis",
+year="2016",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="147--169",
+abstract="We present a method for verifying relational program properties, that is, properties that relate the input and the output of two programs. Our verification method is parametric with respect to the definition of the operational semantics of the programming language in which the two programs are written. That definition of the semantics consists of a set Int of constrained Horn clauses (CHCs) that encode the interpreter of the programming language. Then, given the programs and the relational property we want to verify, we generate, by using Int, a set of constrained Horn clauses whose satisfiability is equivalent to the validity of the property. Unfortunately, state-of-the-art solvers for CHCs have severe limitations in proving the satisfiability, or the unsatisfiability, of such sets of clauses. We propose some transformation techniques that increase the power of CHC solvers when verifying relational properties. We show that these transformations, based on unfold/fold rules, preserve satisfiability. Through an experimental evaluation, we show that in many cases CHC solvers are able to prove the satisfiability (or the unsatisfiability) of sets of clauses obtained by applying the transformations we propose, whereas the same solvers are unable to perform those proofs when given as input the original, untransformed sets of CHCs.",
+isbn="978-3-662-53413-7"
+}
+
+@book{c_standard,
+  added-at = {2012-10-08T01:11:26.000+0200},
+  address = {Geneva, Switzerland},
+  author = {{ISO}},
+  bibdate = {Mon Dec 19 11:12:12 2011},
+  bibsource = {http://www.math.utah.edu/pub/tex/bib/isostd.bib},
+  biburl = {https://www.bibsonomy.org/bibtex/264bc1cf4b2d3d46315a953c6f1688352/gron},
+  day = 8,
+  interhash = {c06a7dbbcb6724820875e51543282440},
+  intrahash = {64bc1cf4b2d3d46315a953c6f1688352},
+  keywords = {C Specification Standard},
+  month = {December},
+  pages = {683 (est.)},
+  publisher = {International Organization for Standardization},
+  remark = {Revises ISO/IEC 9899:1999, ISO/IEC 9899:1999/Cor
+            1:2001, ISO/IEC 9899:1999/Cor 2:2004, and ISO/IEC
+            9899:1999/Cor 3:2007.},
+  timestamp = {2012-10-08T01:11:26.000+0200},
+  title = {{ISO/IEC 9899:2011 Information technology ---
+           Programming languages --- C}},
+  url = {http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=57853},
+  year = 2011
+}
+
+@techreport{crediblecompilation,
+ author = {Rinard, M.},
+ title = {Credible Compilers},
+ year = {1999},
+ source = {http://www.ncstrl.org:8900/ncstrl/servlet/search?formname=detail\&id=oai%3Ancstrlh%3Amitai%3AMIT-LCS%2F%2FMIT%2FLCS%2FTR-776},
+ publisher = {Massachusetts Institute of Technology},
+ address = {Cambridge, MA, USA},
+} 
+
+@inproceedings{crellvm18,
+ author = {Kang, Jeehoon and Kim, Yoonseung and Song, Youngju and Lee, Juneyoung and Park, Sanghoon and Shin, Mark Dongyeon and Kim, Yonghyun and Cho, Sungkeun and Choi, Joonwon and Hur, Chung-Kil and Yi, Kwangkeun},
+ title = {Crellvm: Verified Credible Compilation for LLVM},
+ booktitle = {Proceedings of the 39th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+ series = {PLDI 2018},
+ year = {2018},
+ isbn = {978-1-4503-5698-5},
+ location = {Philadelphia, PA, USA},
+ pages = {631--645},
+ numpages = {15},
+ url = {http://doi.acm.org/10.1145/3192366.3192377},
+ doi = {10.1145/3192366.3192377},
+ acmid = {3192377},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {Coq, LLVM, compiler verification, credible compilation, relational Hoare logic, translation validation},
+} 
