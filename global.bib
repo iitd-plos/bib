@@ -730,7 +730,7 @@
 
 
 @inproceedings{chess,
-	author = {Madanlal Musuvathi and Shaz Qadeer and Thomas Ball and Gérard Basler and Piramanayagam Arumuga Nainar and Iulian Neamtiu},
+	author = {Madanlal Musuvathi and Shaz Qadeer and Thomas Ball and GÃ©rard Basler and Piramanayagam Arumuga Nainar and Iulian Neamtiu},
 	booktitle = {OSDI '08: Proceedings of the 8th conference on Symposium on Operating Systems Design \& Implementation},
 	pages = {267-280},
 	publisher = {USENIX Association},
@@ -870,7 +870,7 @@
 @misc{ intelRefManual3B,
 	TITLE = "Intel 64 and {I}{A}-32 Architectures Software Developer's Manual Volume 3{B}: {S}ystem Programming Guide Part 2",
 	howpublished = "\url{http://www.intel.com/products/processor/manuals/}",
-	key = "Intel® 64 and {I}{A}-32 Architectures Software Developer's Manual Volume 3{B}: {S}ystem Programming Guide Part 2"
+	key = "IntelÂ® 64 and {I}{A}-32 Architectures Software Developer's Manual Volume 3{B}: {S}ystem Programming Guide Part 2"
 }
 
 @inproceedings{xiong:adhoc:osdi10,
@@ -2218,6 +2218,24 @@ proved on the source code hold for the executable compiled code as well.},
   month =    {July},
   publisher =    {Springer}}
 
+@online{yices_bug,
+  title = {Yices2 bug report},
+  url = {https://github.com/SRI-CSL/yices2/issues/146},
+  urldate = {2020-05-13}
+}
+
+@online{dietlibc,
+  title = {diet libc webpage},
+  url = {https://www.fefe.de/dietlibc/},
+  urldate = {2020-05-13}
+}
+
+@online{openbsdlibc,
+  title = {OpenBSD libc sources},
+  url = {https://github.com/openbsd/src/tree/master/lib/libc},
+  urldate = {2020-05-13}
+}
+
 @inproceedings{eqsat,
   author = {Tate, Ross and Stepp, Michael and Tatlock, Zachary and Lerner, Sorin},
   title = {Equality Saturation: a New Approach to Optimization},
@@ -2566,7 +2584,7 @@ isbn={978-3-642-38855-2},
 booktitle={Static Analysis},
 volume={7935},
 series={Lecture Notes in Computer Science},
-editor={Logozzo, Francesco and Fähndrich, Manuel},
+editor={Logozzo, Francesco and FÃ¤hndrich, Manuel},
 doi={10.1007/978-3-642-38856-9_17},
 title={Witnessing Program Transformations},
 url={http://dx.doi.org/10.1007/978-3-642-38856-9_17},
@@ -3686,7 +3704,7 @@ year="2005",
 publisher="Springer Berlin Heidelberg",
 address="Berlin, Heidelberg",
 pages="46--60",
-abstract="We consider integer arithmetic modulo a power of 2 as provided by mainstream programming languages like Java or standard implementations of C. The difficulty here is that the ring ¿mof integers modulo m = 2w, w > 1, has zero divisors and thus cannot be embedded into a field. Not withstanding that, we present intra- and inter-procedural algorithms for inferring for every program point u, affine relations between program variables valid at u. Our algorithms are not only sound but also complete in that they detect all valid affine relations. Moreover, they run in time linear in the program size and polynomial in the number of program variables and can be implemented by using the same modular integer arithmetic as the target language to be analyzed.",
+abstract="We consider integer arithmetic modulo a power of 2 as provided by mainstream programming languages like Java or standard implementations of C. The difficulty here is that the ring Â¿mof integers modulo m = 2w, w > 1, has zero divisors and thus cannot be embedded into a field. Not withstanding that, we present intra- and inter-procedural algorithms for inferring for every program point u, affine relations between program variables valid at u. Our algorithms are not only sound but also complete in that they detect all valid affine relations. Moreover, they run in time linear in the program size and polynomial in the number of program variables and can be implemented by using the same modular integer arithmetic as the target language to be analyzed.",
 isbn="978-3-540-31987-0"
 }
 
@@ -4276,9 +4294,9 @@ url = {https://doi.org/10.1145/363235.363259},
 doi = {10.1145/363235.363259},
 journal = {Commun. ACM},
 month = oct,
-pages = {576¿580},
+pages = {576Â¿580},
 numpages = {5},
-keywords = {programming language design, machine-independent programming, theory of programming¿ proofs of programs, program documentation, axiomatic method, formal language definition}
+keywords = {programming language design, machine-independent programming, theory of programmingÂ¿ proofs of programs, program documentation, axiomatic method, formal language definition}
 }
 
 
@@ -4293,11 +4311,45 @@ address = {New York, NY, USA},
 url = {https://doi.org/10.1145/964001.964003},
 doi = {10.1145/964001.964003},
 booktitle = {Proceedings of the 31st ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
-pages = {14¿25},
+pages = {14Â¿25},
 numpages = {12},
 keywords = {security, dependency, program analysis, denotational semantics, types, information flow, partial equivalence relations, Hoare logic, optimizing compilation},
 location = {Venice, Italy},
-series = {POPL ¿04}
+series = {POPL Â¿04}
+}
+
+@article{llreve,
+author = {Kiefer, Moritz and Klebanov, Vladimir and Ulbrich, Mattias},
+title = {Relational Program Reasoning Using Compiler IR},
+year = {2018},
+issue_date = {March 2018},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg},
+volume = {60},
+number = {3},
+issn = {0168-7433},
+url = {https://doi.org/10.1007/s10817-017-9433-5},
+doi = {10.1007/s10817-017-9433-5},
+journal = {J. Autom. Reason.},
+month = mar,
+pages = {337â€“363},
+numpages = {27}
+}
+
+@inproceedings{lore,
+author={Z. {Chen} and Z. {Gong} and J. J. {Szaday} and D. C. {Wong} and D. {Padua} and A. {Nicolau} and A. V. {Veidenbaum} and N. {Watkinson} and Z. {Sura} and S. {Maleki} and J. {Torrellas} and G. {DeJong}},
+booktitle={2017 IEEE International Symposium on Workload Characterization (IISWC)}, 
+title={LORE: A loop repository for the evaluation of compilers}, 
+year={2017},
+volume={},
+number={},
+pages={219-228},
+}
+
+@online{compilerai,
+  title = {Compiler.AI},
+  url = {https://compiler.ai},
+  urldate = {2020-05-13}
 }
 
 @inproceedings{lore,
