@@ -3450,9 +3450,9 @@ month={May},
   year = {2018},
   location = {Los Angeles, CA},
   numpages = {22},
-  howpublished = {http://www.cse.iitd.ac.in/$\sim$sbansal/pubs/intermittent.pdf},
   publisher = {Springer-Verlag},
 }
+#howpublished = {http://www.cse.iitd.ac.in/$\sim$sbansal/pubs/intermittent.pdf},
 
 @misc{aplas17_src_award,
   title = {{A}{P}{L}{A}{S} 2017 {S}tudent {R}esearch {C}ompetition {F}irst {P}lace {A}ward awarded to {M}anjeet {D}ahiya for his work on ``{A}utomatic {V}erification of {I}ntermittent {S}ystems''},
@@ -3519,7 +3519,7 @@ month={May},
 
 @misc{bacus,
 	TITLE = "{P}4+{B}acus for developing high-performance software switches",
-	howpublished = "\url{http://www.cse.iitd.ac.in/$\sim$sbansal/bacus.pdf}",
+	howpublished = "\url{http://www.cse.iitd.ac.in/~sbansal/bacus.pdf}",
 	key = "{P}4+{B}acus for developing high-performance software switches",
 }
 
@@ -3818,11 +3818,21 @@ month={March},}
   year={2019},
 }
 
-@misc{ooelala,
-  title="OOElala: Order-Of-Evaluation based Alias Analysis for Compiler Optimization",
-  author = "Phulia, Ankush and Bhagee, Vaibhav and Bansal, Sorav",
-  howpublished = "Accepted at PLDI 2020",
-  year={2020},
+@inproceedings{ooelala,
+author = {Phulia, Ankush and Bhagee, Vaibhav and Bansal, Sorav},
+title = {OOElala: Order-of-Evaluation Based Alias Analysis for Compiler Optimization},
+year = {2020},
+isbn = {9781450376136},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3385412.3385962},
+doi = {10.1145/3385412.3385962},
+booktitle = {Proceedings of the 41st ACM SIGPLAN Conference on Programming Language Design and Implementation},
+pages = {839–853},
+numpages = {15},
+keywords = {Undefined Behaviour, Compiler Optimization},
+location = {London, UK},
+series = {PLDI 2020}
 }
 
 @misc{typed_superopt,
@@ -4366,4 +4376,150 @@ pages={219-228},
   volume={},
   number={},
   pages={219-228},
+}
+
+@inproceedings{eqcheck_crypto,
+  title={Automatic equivalence checking for assembly implementations of cryptography libraries},
+  author={Lim, Jay P and Nagarakatte, Santosh},
+  booktitle={2019 IEEE/ACM International Symposium on Code Generation and Optimization (CGO)},
+  pages={37--49},
+  year={2019},
+  organization={IEEE}
+}
+
+@inproceedings{jia2019taso,
+  title={TASO: optimizing deep learning computation with automatic generation of graph substitutions},
+  author={Jia, Zhihao and Padon, Oded and Thomas, James and Warszawski, Todd and Zaharia, Matei and Aiken, Alex},
+  booktitle={Proceedings of the 27th ACM Symposium on Operating Systems Principles},
+  pages={47--62},
+  year={2019}
+}
+
+@article{transkernel,
+  title={Transkernel: An Executor for Commodity Kernels on Peripheral Cores},
+  author={Liwei Guo and Shuang Zhai and Yi Qiao and Felix Xiaozhu Lin},
+  journal={ArXiv},
+  year={2018},
+  volume={abs/1811.05000}
+}
+
+@inproceedings{learningbt,
+author = {Song, Changheng and Wang, Wenwen and Yew, Pen-Chung and Zhai, Antonia and Zhang, Weihua},
+title = {Unleashing the Power of Learning: An Enhanced Learning-Based Approach for Dynamic Binary Translation},
+year = {2019},
+isbn = {9781939133038},
+publisher = {USENIX Association},
+address = {USA},
+booktitle = {Proceedings of the 2019 USENIX Conference on Usenix Annual Technical Conference},
+pages = {77–89},
+numpages = {13},
+location = {Renton, WA, USA},
+series = {USENIX ATC ’19}
+}
+
+@article{retargetable_system_level_dbt,
+author = {Spink, Tom and Wagstaff, Harry and Franke, Bj\"{o}rn},
+title = {A Retargetable System-Level DBT Hypervisor},
+year = {2020},
+issue_date = {June 2020},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {36},
+number = {4},
+issn = {0734-2071},
+url = {https://doi.org/10.1145/3386161},
+doi = {10.1145/3386161},
+journal = {ACM Trans. Comput. Syst.},
+month = may,
+articleno = {14},
+numpages = {24},
+keywords = {hypervisor, Virtualization, dynamic binary translation}
+}
+
+
+@inproceedings{mitosis,
+author = {Achermann, Reto and Panwar, Ashish and Bhattacharjee, Abhishek and Roscoe, Timothy and Gandhi, Jayneel},
+title = {Mitosis: Transparently Self-Replicating Page-Tables for Large-Memory Machines},
+year = {2020},
+isbn = {9781450371025},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3373376.3378468},
+doi = {10.1145/3373376.3378468},
+booktitle = {Proceedings of the Twenty-Fifth International Conference on Architectural Support for Programming Languages and Operating Systems},
+pages = {283–300},
+numpages = {18},
+keywords = {page-table replication, linux, tlb, numa, large pages, tlb miss overhead},
+location = {Lausanne, Switzerland},
+series = {ASPLOS ’20}
+}
+
+@inproceedings{cuckoopt,
+author = {Skarlatos, Dimitrios and Kokolis, Apostolos and Xu, Tianyin and Torrellas, Josep},
+title = {Elastic Cuckoo Page Tables: Rethinking Virtual Memory Translation for Parallelism},
+year = {2020},
+isbn = {9781450371025},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3373376.3378493},
+doi = {10.1145/3373376.3378493},
+booktitle = {Proceedings of the Twenty-Fifth International Conference on Architectural Support for Programming Languages and Operating Systems},
+pages = {1093–1108},
+numpages = {16},
+keywords = {virtual memory, page tables, cuckoo hashing},
+location = {Lausanne, Switzerland},
+series = {ASPLOS ’20}
+}
+
+@inproceedings{perforatedPage,
+  author={C. H. {Park} and S. {Cha} and B. {Kim} and Y. {Kwon} and D. {Black-Schaffer} and J. {Huh}},
+  booktitle={2020 ACM/IEEE 47th Annual International Symposium on Computer Architecture (ISCA)}, 
+  title={Perforated Page: Supporting Fragmented Memory Allocation for Large Pages}, 
+  year={2020},
+  volume={},
+  number={},
+  pages={913-925},
+}
+
+@inproceedings{contiguity_memvirt,
+  author={C. {Alverti} and S. {Psomadakis} and V. {Karakostas} and J. {Gandhi} and K. {Nikas} and G. {Goumas} and N. {Koziris}},
+  booktitle={2020 ACM/IEEE 47th Annual International Symposium on Computer Architecture (ISCA)}, 
+  title={Enhancing and Exploiting Contiguity for Fast Memory Virtualization}, 
+  year={2020},
+  volume={},
+  number={},
+  pages={515-528},
+}
+
+@inproceedings{superpage_management_analysis,
+  author    = {Weixi Zhu and
+               Alan L. Cox and
+               Scott Rixner},
+  title     = {A Comprehensive Analysis of Superpage Management Mechanisms and Policies},
+  booktitle = {2020 {USENIX} Annual Technical Conference, {USENIX} {ATC} 2020, July
+               15-17, 2020},
+  pages     = {829--842},
+  year      = {2020},
+  url       = {https://www.usenix.org/conference/atc20/presentation/zhu-weixi},
+  timestamp = {Tue, 28 Jul 2020 13:58:39 +0200},
+  biburl    = {https://dblp.org/rec/conf/usenix/ZhuCR20.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+#crossref  = {DBLP:conf/usenix/2020},
+
+@inproceedings{tailored_page_sizes,
+  author={F. {Guvenilir} and Y. N. {Patt}},
+  booktitle={2020 ACM/IEEE 47th Annual International Symposium on Computer Architecture (ISCA)}, 
+  title={Tailored Page Sizes}, 
+  year={2020},
+  volume={},
+  number={},
+  pages={900-912},
+}
+
+@misc{countertv,
+  title="Counterexample-Guided Correlation Algorithm for Translation Validation",
+  author = "Gupta, Shubhani and Rose, Abhishek and Bansal, Sorav",
+  howpublished = "Accepted at OOPSLA 2020. Draft available at \url{http://www.cse.iitd.ac.in/~sbansal/tmp/countertv.pdf}",
+  year={2020},
 }
