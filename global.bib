@@ -4553,11 +4553,23 @@ series = {ASPLOS ’20}
   pages={900-912},
 }
 
-@misc{countertv,
-  title="Counterexample-Guided Correlation Algorithm for Translation Validation",
-  author = "Gupta, Shubhani and Rose, Abhishek and Bansal, Sorav",
-  howpublished = "Accepted at OOPSLA 2020. Draft available at \url{http://www.cse.iitd.ac.in/~sbansal/tmp/countertv.pdf}",
-  year={2020},
+@article{oopsla20,
+author = {Gupta, Shubhani and Rose, Abhishek and Bansal, Sorav},
+title = {Counterexample-Guided Correlation Algorithm for Translation Validation},
+year = {2020},
+issue_date = {November 2020},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {4},
+number = {OOPSLA},
+url = {https://doi.org/10.1145/3428289},
+doi = {10.1145/3428289},
+abstract = {Automatic translation validation across the unoptimized intermediate representation (IR) of the original source code and the optimized executable assembly code is a desirable capability, and has the potential to compete with existing approaches to verified compilation such as CompCert. A difficult subproblem is the automatic identification of the correlations across the transitions between the two programs' respective locations. We present a counterexample-guided algorithm to identify these correlations in a robust and scalable manner. Our algorithm has both theoretical and empirical advantages over prior work in this problem space.},
+journal = {Proc. ACM Program. Lang.},
+month = nov,
+articleno = {221},
+numpages = {29},
+keywords = {Translation Validation, Equivalence Checking, Certified Compilation, Automatic Verification}
 }
 
 @inproceedings{shemer2019property,
@@ -4937,3 +4949,11 @@ isbn="978-3-319-12736-1"
 
 @phdthesis{loop_fission, place={United States}, title={Optimizing supercompilers for supercomputers}, abstractNote={This thesis discusses several problems facing compiler design for supercomputers. One problem is that of building a comprehensive yet efficient means of representing the flow of data in a program. A means is proposed of computing a data dependence graph and labelling the arcs with direction vectors that show how the flow of data corresponds to the loop structure of the program. These data dependence direction vectors are used in several high level compiler loop optimizations, namely, loop vectorization, loop fission, loop fusion and loop interchanging. It is shown how to perform these transformations and how to use them to optimize programs for a wide range of supercomputers. The problems of recurrence relations are also discussed. Arithmetic recurrences with IF statements, and recurrences involving both data and control dependence relations in a cycle are studied. The wavefront method of solving recurrences is also treated. Another problem for a compiler is the management of compiler temporary variables; supercomputer compilers must manage temporary arrays, and ways to make this problem more tractable are discussed. Finally WHILE loops are discussed and it is shown how they relate to iterative DO loops, and several methods to execute WHILE loops on a machine are shown. THe general structure of an optimizing compiler for supercomputers, developed from the experience with a test-bed compiler, is given.}, school={Univ. of Illinois,Urbana, IL}, author={Wolfe, M.J.}, year={1982}, month={Jan}}
 
+@misc{mlir,
+      title={MLIR: A Compiler Infrastructure for the End of Moore's Law},
+      author={Chris Lattner and Mehdi Amini and Uday Bondhugula and Albert Cohen and Andy Davis and Jacques Pienaar and River Riddle and Tatiana Shpeisman and Nicolas Vasilache and Oleksandr Zinenko},
+      year={2020},
+      eprint={2002.11054},
+      archivePrefix={arXiv},
+      primaryClass={cs.PL}
+}
