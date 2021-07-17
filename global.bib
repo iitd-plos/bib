@@ -4957,3 +4957,485 @@ isbn="978-3-319-12736-1"
       archivePrefix={arXiv},
       primaryClass={cs.PL}
 }
+
+@inproceedings{sysForPmem,
+author = {Dulloor, Subramanya R. and Kumar, Sanjay and Keshavamurthy, Anil and Lantz, Philip and Reddy, Dheeraj and Sankaran, Rajesh and Jackson, Jeff},
+title = {System Software for Persistent Memory},
+year = {2014},
+isbn = {9781450327046},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2592798.2592814},
+doi = {10.1145/2592798.2592814},
+abstract = {Emerging byte-addressable, non-volatile memory technologies offer performance within
+an order of magnitude of DRAM, prompting their inclusion in the processor memory subsystem.
+However, such load/store accessible Persistent Memory (PM) has implications on system
+design, both hardware and software. In this paper, we explore system software support
+to enable low-overhead PM access by new and legacy applications. To this end, we implement
+PMFS, a light-weight POSIX file system that exploits PM's byte-addressability to avoid
+overheads of block-oriented storage and enable direct PM access by applications (with
+memory-mapped I/O). PMFS exploits the processor's paging and memory ordering features
+for optimizations such as fine-grained logging (for consistency) and transparent large
+page support (for faster memory-mapped I/O). To provide strong consistency guarantees,
+PMFS requires only a simple hardware primitive that provides software enforceable
+guarantees of durability and ordering of stores to PM. Finally, PMFS uses the processor's
+existing features to protect PM from stray writes, thereby improving reliability.Using
+a hardware emulator, we evaluate PMFS's performance with several workloads over a
+range of PM performance characteristics. PMFS shows significant (up to an order of
+magnitude) gains over traditional file systems (such as ext4) on a RAMDISK-like PM
+block device, demonstrating the benefits of optimizing system software for PM.},
+booktitle = {Proceedings of the Ninth European Conference on Computer Systems},
+articleno = {15},
+numpages = {15},
+location = {Amsterdam, The Netherlands},
+series = {EuroSys '14}
+}
+
+@Book{programmingPersistentMemory,
+author={Scargall, Steve},
+title={Programming Persistent Memory : A Comprehensive Guide for Developers},
+year={2020},
+publisher={Springer Nature},
+keywords={Computer science; Computer communication systems; Big data},
+abstract={Beginning and experienced programmers will use this comprehensive guide to persistent memory programming. You will understand how persistent memory brings together several new software/hardware requirements, and offers great promise for better performance and faster application startup times---a huge leap forward in byte-addressable capacity compared with current DRAM offerings. This revolutionary new technology gives applications significant performance and capacity improvements over existing technologies. It requires a new way of thinking and developing, which makes this highly disruptive to the IT/computing industry. The full spectrum of industry sectors that will benefit from this technology include, but are not limited to, in-memory and traditional databases, AI, analytics, HPC, virtualization, and big data. Programming Persistent Memory describes the technology and why it is exciting the industry. It covers the operating system and hardware requirements as well as how to create development environments using emulated or real persistent memory hardware. The book explains fundamental concepts; provides an introduction to persistent memory programming APIs for C, C++, JavaScript, and other languages; discusses RMDA with persistent memory; reviews security features; and presents many examples. Source code and examples that you can run on your own systems are included. What You'll Learn Understand what persistent memory is, what it does, and the value it brings to the industry Become familiar with the operating system and hardware requirements to use persistent memory Know the fundamentals of persistent memory programming: why it is different from current programming methods, and what developers need to keep in mind when programming for persistence Look at persistent memory application development by example using the Persistent Memory Development Kit (PMDK) Design and optimize data structures for persistent memory Study how real-world applications are modified to leverage persistent memory Utilize the tools available for persistent memory programming, application performance profiling, and debugging Who This Book Is For C, C++, Java, and Python developers, but will also be useful to software, cloud, and hardware architects across a broad spectrum of sectors, including cloud service providers, independent software vendors, high performance compute, artificial intelligence, data analytics, big data, etc.},
+doi={10.1007/978-1-4842-4932-1},
+url={https://library.oapen.org/bitstream/id/e234e601-6128-4ee4-be45-32e8f2e417dd/1007325.pdf},
+url={https://doi.org/10.1007/978-1-4842-4932-1},
+language={English}
+}
+
+@inproceedings{espresso,
+author = {Wu, Mingyu and Zhao, Ziming and Li, Haoyu and Li, Heting and Chen, Haibo and Zang, Binyu and Guan, Haibing},
+title = {Espresso: Brewing Java For More Non-Volatility with Non-Volatile Memory},
+year = {2018},
+isbn = {9781450349116},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3173162.3173201},
+doi = {10.1145/3173162.3173201},
+abstract = {Fast, byte-addressable non-volatile memory (NVM) embraces both near-DRAM latency and
+disk-like persistence, which has generated considerable interests to revolutionize
+system software stack and programming models. However, it is less understood how NVM
+can be combined with managed runtime like Java virtual machine (JVM) to ease persistence
+management. This paper proposes Espresso, a holistic extension to Java and its runtime,
+to enable Java programmers to exploit NVM for persistence management with high performance.
+Espresso first provides a general persistent heap design called Persistent Java Heap
+(PJH) to manage persistent data as normal Java objects. The heap is then strengthened
+with a recoverable mechanism to provide crash consistency for heap metadata. Espresso
+further provides a new abstraction called Persistent Java Object (PJO) to provide
+an easy-to-use but safe persistence programming model for programmers to persist application
+data. Evaluation confirms that Espresso significantly outperforms state-of-art NVM
+support for Java (i.e., JPA and PCJ) while being compatible to data structures in
+existing Java programs.},
+booktitle = {Proceedings of the Twenty-Third International Conference on Architectural Support for Programming Languages and Operating Systems},
+pages = {70–83},
+numpages = {14},
+keywords = {crash consistency, non-volatile memory, java virtual machine},
+location = {Williamsburg, VA, USA},
+series = {ASPLOS '18}
+}
+
+@inproceedings{autopersist,
+author = {Shull, Thomas and Huang, Jian and Torrellas, Josep},
+title = {AutoPersist: An Easy-to-Use Java NVM Framework Based on Reachability},
+year = {2019},
+isbn = {9781450367127},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3314221.3314608},
+doi = {10.1145/3314221.3314608},
+abstract = {Byte-addressable, non-volatile memory (NVM) is emerging as a revolutionary memory
+technology that provides persistency, near-DRAM performance, and scalable capacity.
+To facilitate its use, many NVM programming models have been proposed. However, most
+models require programmers to explicitly specify the data structures or objects that
+should reside in NVM. Such requirement increases the burden on programmers, complicates
+software development, and introduces opportunities for correctness and performance
+bugs. We believe that requiring programmers to identify the data structures that
+should reside in NVM is untenable. Instead, programmers should only be required to
+identify durable roots - the entry points to the persistent data structures at recovery
+time. The NVM programming framework should then automatically ensure that all the
+data structures reachable from these roots are in NVM, and stores to these data structures
+are persistently completed in an intuitive order. To this end, we present a new NVM
+programming framework, named AutoPersist, that only requires programmers to identify
+durable roots. AutoPersist then persists all the data structures that can be reached
+from the durable roots in an automated and transparent manner. We implement AutoPersist
+as a thread-safe extension to the Java language and perform experiments with a variety
+of applications running on Intel Optane DC persistent memory. We demonstrate that
+AutoPersist requires minimal code modifications, and significantly outperforms expert-marked
+Java NVM applications.},
+booktitle = {Proceedings of the 40th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+pages = {316–332},
+numpages = {17},
+keywords = {Non-Volatile Memory, Java, JIT Compilation},
+location = {Phoenix, AZ, USA},
+series = {PLDI 2019}
+}
+
+@misc{persistent_memory_programming_login_article,
+  AUTHOR = "Andy Rudoff",
+  TITLE = "{P}ersistent {M}emory {P}rogramming",
+  howpublished = "The Usenix magazine, 34-40, 2017. \url{https://www.usenix.org/system/files/login/articles/login_summer17_07_rudoff.pdf}",
+}
+
+@inproceedings{logfree_concurrent_ds,
+author = {David, Tudor and Dragojevi\'{c}, Aleksandar and Guerraoui, Rachid and Zablotchi, Igor},
+title = {Log-Free Concurrent Data Structures},
+year = {2018},
+isbn = {9781931971447},
+publisher = {USENIX Association},
+address = {USA},
+abstract = {Non-volatile RAM (NVRAM) makes it possible for data structures to tolerate transient
+failures, assuming however that programmers have designed these structures such that
+their consistency is preserved upon recovery. Previous approaches are typically transactional
+and inherently make heavy use of logging, resulting in implementations that are significantly
+slower than their DRAM counterparts. In this paper, we introduce a set of techniques
+aimed at lock-free data structures that, in the large majority of cases, remove the
+need for logging (and costly durable store instructions) both in the data structure
+algorithm and in the associated memory management scheme. Together, these generic
+techniques enable us to design what we call log-free concurrent data structures, which,
+as we illustrate on linked lists, hash tables, skip lists, and BSTs, can provide several-fold
+performance improvements over previous transaction-based implementations, with overheads
+of the order of milliseconds for recovery after a failure. We also highlight how our
+techniques can be integrated into practical systems, by presenting a durable version
+of Memcached that maintains the performance of its volatile counterpart.},
+booktitle = {Proceedings of the 2018 USENIX Conference on Usenix Annual Technical Conference},
+pages = {373–385},
+numpages = {13},
+location = {Boston, MA, USA},
+series = {USENIX ATC '18}
+}
+
+@inproceedings{whole_system_persistence,
+author = {Narayanan, Dushyanth and Hodson, Orion},
+title = {Whole-System Persistence},
+year = {2012},
+isbn = {9781450307598},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2150976.2151018},
+doi = {10.1145/2150976.2151018},
+abstract = {Today's databases and key-value stores commonly keep all their data in main memory.
+A single server can have over 100 GB of memory, and a cluster of such servers can
+have 10s to 100s of TB. However, a storage back end is still required for recovery
+from failures. Recovery can last for minutes for a single server or hours for a whole
+cluster, causing heavy load on the back end. Non-volatile main memory (NVRAM) technologies
+can help by allowing near-instantaneous recovery of in-memory state. However, today's
+software does not support this well. Block-based approaches such as persistent buffer
+caches suffer from data duplication and block transfer overheads. Recently, user-level
+persistent heaps have been shown to have much better performance than these. However
+they require substantial application modification and still have significant runtime
+overheads. This paper proposes whole-system persistence (WSP) as an alternative. WSP
+is aimed at systems where all memory is non-volatile. It transparently recovers an
+application's entire state, making a failure appear as a suspend/resume event. Runtime
+overheads are eliminated by using "flush on fail": transient state in processor registers
+and caches is flushed to NVRAM only on failure, using the residual energy from the
+system power supply. Our evaluation shows that this approach has 1.6--13 times better
+runtime performance than a persistent heap, and that flush-on-fail can complete safely
+within 2--35% of the residual energy window provided by standard power supplies.},
+booktitle = {Proceedings of the Seventeenth International Conference on Architectural Support for Programming Languages and Operating Systems},
+pages = {401–410},
+numpages = {10},
+keywords = {persistence, NVRAM},
+location = {London, England, UK},
+series = {ASPLOS XVII}
+}
+
+@inproceedings{splitfs,
+author = {Kadekodi, Rohan and Lee, Se Kwon and Kashyap, Sanidhya and Kim, Taesoo and Kolli, Aasheesh and Chidambaram, Vijay},
+title = {SplitFS: Reducing Software Overhead in File Systems for Persistent Memory},
+year = {2019},
+isbn = {9781450368735},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3341301.3359631},
+doi = {10.1145/3341301.3359631},
+abstract = {We present SplitFS, a file system for persistent memory (PM) that reduces software
+overhead significantly compared to state-of-the-art PM file systems. SplitFS presents
+a novel split of responsibilities between a user-space library file system and an
+existing kernel PM file system. The user-space library file system handles data operations
+by intercepting POSIX calls, memory-mapping the underlying file, and serving the read
+and overwrites using processor loads and stores. Metadata operations are handled by
+the kernel PM file system (ext4 DAX). SplitFS introduces a new primitive termed relink
+to efficiently support file appends and atomic data operations. SplitFS provides three
+consistency modes, which different applications can choose from, without interfering
+with each other. SplitFS reduces software overhead by up-to 4x compared to the NOVA
+PM file system, and 17x compared to ext4 DAX. On a number of micro-benchmarks and
+applications such as the LevelDB key-value store running the YCSB benchmark, SplitFS
+increases application performance by up to 2x compared to ext4 DAX and NOVA while
+providing similar consistency guarantees.},
+booktitle = {Proceedings of the 27th ACM Symposium on Operating Systems Principles},
+pages = {494–508},
+numpages = {15},
+keywords = {crash consistency, persistent memory, direct access, file systems},
+location = {Huntsville, Ontario, Canada},
+series = {SOSP '19}
+}
+
+@inproceedings{caftl,
+author = {Chen, Feng and Luo, Tian and Zhang, Xiaodong},
+title = {CAFTL: A Content-Aware Flash Translation Layer Enhancing the Lifespan of Flash Memory Based Solid State Drives},
+year = {2011},
+isbn = {9781931971829},
+publisher = {USENIX Association},
+address = {USA},
+abstract = {Although Flash Memory based Solid State Drive (SSD) exhibits high performance and
+low power consumption, a critical concern is its limited lifespan along with the associated
+reliability issues. In this paper, we propose to build a Content-Aware Flash Translation
+Layer (CAFTL) to enhance the endurance of SSDs at the device level. With no need of
+any semantic information from the host, CAFTL can effectively reduce write traffic
+to flash memory by removing unnecessary duplicate writes and can also substantially
+extend available free flash memory space by coalescing redundant data in SSDs, which
+further improves the efficiency of garbage collection and wear-leveling. In order
+to retain high data access performance, we have also designed a set of acceleration
+techniques to reduce the runtime overhead and minimize the performance impact caused
+by extra computational cost. Our experimental results show that our solution can effectively
+identify up to 86.2% of the duplicate writes, which translates to a write traffic
+reduction of up to 24.2% and extends the flash space by a factor of up to 31.2%. Meanwhile,
+CAFTL only incurs a minimized performance overhead by a factor of up to 0.5%.},
+booktitle = {Proceedings of the 9th USENIX Conference on File and Stroage Technologies},
+pages = {6},
+numpages = {1},
+location = {San Jose, California},
+series = {FAST'11}
+}
+
+@misc{fragmentation_in_pmem,
+  TITLE = {Persistent allocator design - fragmentation},
+  howpublished = "\url{https://pmem.io/2016/02/25/fragmentation.html}"
+  key = {Persistent allocator design - fragmentation},
+}
+
+@article{hinfs,
+author = {Chen, Youmin and Shu, Jiwu and Ou, Jiaxin and Lu, Youyou},
+title = {HiNFS: A Persistent Memory File System with Both Buffering and Direct-Access},
+year = {2018},
+issue_date = {April 2018},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {14},
+number = {1},
+issn = {1553-3077},
+url = {https://doi.org/10.1145/3204454},
+doi = {10.1145/3204454},
+abstract = {Persistent memory provides data persistence at main memory with emerging non-volatile
+main memories (NVMMs). Recent persistent memory file systems aggressively use direct
+access, which directly copy data between user buffer and the storage layer, to avoid
+the double-copy overheads through the OS page cache. However, we observe they all
+suffer from slow writes due to NVMMs’ asymmetric read-write performance and much slower
+performance than DRAM.In this article, we propose HiNFS, a high-performance file system
+for non-volatile main memory, to combine both buffering and direct access for fine-grained
+file system operations. HiNFS uses an NVMM-aware Write Buffer to buffer the lazy-persistent
+file writes in DRAM, while performing direct access to NVMM for eager-persistent file
+writes. It directly reads file data from both DRAM and NVMM, by ensuring read consistency
+with a combination of the DRAM Block Index and Cacheline Bitmap to track the latest
+data between DRAM and NVMM. HiNFS also employs a Buffer Benefit Model to identify
+the eager-persistent file writes before issuing I/Os. Evaluations show that HiNFS
+significantly improves throughput by up to 184% and reduces execution time by up to
+64%comparing with state-of-the-art persistent memory file systems PMFS and EXT4-DAX.},
+journal = {ACM Trans. Storage},
+month = apr,
+articleno = {4},
+numpages = {30},
+keywords = {buffering, file system, direct access, Persistent memory}
+}
+
+
+@inproceedings{facebook_reducing_dram_footprint_using_nvm,
+author = {Eisenman, Assaf and Gardner, Darryl and AbdelRahman, Islam and Axboe, Jens and Dong, Siying and Hazelwood, Kim and Petersen, Chris and Cidon, Asaf and Katti, Sachin},
+title = {Reducing DRAM Footprint with NVM in Facebook},
+year = {2018},
+isbn = {9781450355841},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3190508.3190524},
+doi = {10.1145/3190508.3190524},
+abstract = {Popular SSD-based key-value stores consume a large amount of DRAM in order to provide
+high-performance database operations. However, DRAM can be expensive for data center
+providers, especially given recent global supply shortages that have resulted in increasing
+DRAM costs. In this work, we design a key-value store, MyNVM, which leverages an NVM
+block device to reduce DRAM usage, and to reduce the total cost of ownership, while
+providing comparable latency and queries-per-second (QPS) as MyRocks on a server with
+a much larger amount of DRAM. Replacing DRAM with NVM introduces several challenges.
+In particular, NVM has limited read bandwidth, and it wears out quickly under a high
+write bandwidth.We design novel solutions to these challenges, including using small
+block sizes with a partitioned index, aligning blocks post-compression to reduce read
+bandwidth, utilizing dictionary compression, implementing an admission control policy
+for which objects get cached in NVM to control its durability, as well as replacing
+interrupts with a hybrid polling mechanism. We implemented MyNVM and measured its
+performance in Facebook's production environment. Our implementation reduces the size
+of the DRAM cache from 96 GB to 16 GB, and incurs a negligible impact on latency and
+queries-per-second compared to MyRocks. Finally, to the best of our knowledge, this
+is the first study on the usage of NVM devices in a commercial data center environment.},
+booktitle = {Proceedings of the Thirteenth EuroSys Conference},
+articleno = {42},
+numpages = {13},
+location = {Porto, Portugal},
+series = {EuroSys '18}
+}
+
+@inproceedings{go_pmem,
+  title={go-pmem: Native Support for Programming Persistent Memory in Go},
+  author={Jerrin Shaji George and Mohit Verma and R. Venkatasubramanian and Pratap Subrahmanyam},
+  booktitle={USENIX Annual Technical Conference},
+  year={2020}
+}
+
+@inproceedings{nvtraverse,
+author = {Friedman, Michal and Ben-David, Naama and Wei, Yuanhao and Blelloch, Guy E. and Petrank, Erez},
+title = {NVTraverse: In NVRAM Data Structures, the Destination is More Important than the Journey},
+year = {2020},
+isbn = {9781450376136},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3385412.3386031},
+doi = {10.1145/3385412.3386031},
+abstract = {The recent availability of fast, dense, byte-addressable non-volatile memory has led
+to increasing interest in the problem of designing durable data structures that can
+recover from system crashes. However, designing durable concurrent data structures
+that are correct and efficient has proven to be very difficult, leading to many inefficient
+or incorrect algorithms. In this paper, we present a general transformation that takes
+a lock-free data structure from a general class called traversal data structure (that
+we formally define) and automatically transforms it into an implementation of the
+data structure for the NVRAM setting that is provably durably linearizable and highly
+efficient. The transformation hinges on the observation that many data structure operations
+begin with a traversal phase that does not need to be persisted, and thus we only
+begin persisting when the traversal reaches its destination. We demonstrate the transformation's
+efficiency through extensive measurements on a system with Intel's recently released
+Optane DC persistent memory, showing that it can outperform competitors on many workloads.},
+booktitle = {Proceedings of the 41st ACM SIGPLAN Conference on Programming Language Design and Implementation},
+pages = {377–392},
+numpages = {16},
+keywords = {Concurrent Data Structures, Lock-free, Non-blocking, Non-volatile Memory},
+location = {London, UK},
+series = {PLDI 2020}
+}
+
+@article{compiler_support_for_nvm_persistence,
+author = {Elkhouly, Reem and Alshboul, Mohammad and Hayashi, Akihiro and Solihin, Yan and Kimura, Keiji},
+title = {Compiler-Support for Critical Data Persistence in NVM},
+year = {2019},
+issue_date = {January 2020},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {16},
+number = {4},
+issn = {1544-3566},
+url = {https://doi.org/10.1145/3371236},
+doi = {10.1145/3371236},
+abstract = {Non-volatile Main Memories (NVMs) offer a promising way to preserve data persistence
+and enable computation recovery in case of failure. While the use of NVMs can significantly
+reduce the overhead of failure recovery, which is the case with High-Performance Computing
+(HPC) kernels, rewriting existing programs or writing new applications for NVMs is
+non-trivial. In this article, we present a compiler-support that automatically inserts
+complex instructions into kernels to achieve NVM data-persistence based on a simple
+programmer directive. Unlike checkpointing techniques that store the whole system
+state, our technique only persists user-designated objects as well as some parameters
+required for safe recovery such as loop induction variables. Also, our technique can
+reduce the number of data transfer operations, because our compiler coalesces consecutive
+memory-persisting operations into a single memory transaction per cache line when
+possible.Our compiler-support is implemented in the LLVM tool-chain and introduces
+the necessary modifications to loop-intensive computational kernels (e.g., TMM, LU,
+Gauss, and FFT) to force data persistence. The experiments show that our proposed
+compiler-support outperforms the most recent checkpointing techniques while its performance
+overheads are insignificant.},
+journal = {ACM Trans. Archit. Code Optim.},
+month = dec,
+articleno = {54},
+numpages = {25},
+keywords = {data persistence, NVM, Compiler-support, valid recovery}
+}
+
+@inproceedings{tv_oskernel,
+author = {Sewell, Thomas Arthur Leck and Myreen, Magnus O. and Klein, Gerwin},
+title = {Translation Validation for a Verified OS Kernel},
+year = {2013},
+isbn = {9781450320146},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2491956.2462183},
+doi = {10.1145/2491956.2462183},
+abstract = {We extend the existing formal verification of the seL4 operating system microkernel
+from 9500 lines of C source code to the binary level. We handle all functions that
+were part of the previous verification. Like the original verification, we currently
+omit the assembly routines and volatile accesses used to control system hardware.More
+generally, we present an approach for proving refinement between the formal semantics
+of a program on the C source level and its formal semantics on the binary level, thus
+checking the validity of compilation, including some optimisations, and linking, and
+extending static properties proved of the source code to the executable. We make use
+of recent improvements in SMT solvers to almost fully automate this process.We handle
+binaries generated by unmodified gcc 4.5.1 at optimisation level 1, and can handle
+most of seL4 even at optimisation level 2.},
+booktitle = {Proceedings of the 34th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+pages = {471–482},
+numpages = {12},
+keywords = {binary verification, seL4, microkernel},
+location = {Seattle, Washington, USA},
+series = {PLDI '13}
+}
+
+@inproceedings{alive2,
+  title={Alive2: bounded translation validation for LLVM},
+  author={Lopes, Nuno P and Lee, Juneyoung and Hur, Chung-Kil and Liu, Zhengyang and Regehr, John},
+  booktitle={Proceedings of the 42nd ACM SIGPLAN International Conference on Programming Language Design and Implementation (PLDI)},
+  pages={65--79},
+  year={2021}
+}
+
+@inproceedings{diffy,
+  title = {Diffy: Inductive Reasoning of Array Programs using Difference Invariants},
+  author = {Chakraborty, Supratik and Gupta, Ashutosh and Unadkat, Divyesh},
+  booktitle={Proceedings of the 33rd International Conference on Computer-Aided Verification (CAV), to appear},
+}
+
+@article{samet78,
+ author = {Samet, Hanan},
+ title = {Proving the Correctness of Heuristically Optimized Code},
+ journal = {Commun. ACM},
+ issue_date = {July 1978},
+ volume = {21},
+ number = {7},
+ month = jul,
+ year = {1978},
+ issn = {0001-0782},
+ pages =  {570--582},
+ numpages =  {13},
+ xurl =  {http://doi.acm.org/10.1145/359545.359569},
+ doi =  {10.1145/359545.359569},
+ acmid = {359569},
+ publisher =  {ACM},
+ xaddress =  {New York, NY, USA},
+ keywords = {Lisp, code optimization, compilers, correctness, debugging, program verification},
+}
+
+@inproceedings{superopt_nacl,
+ author = {Churchill, Berkeley and Sharma, Rahul and Bastien, JF and Aiken, Alex},
+ title = {Sound Loop Superoptimization for {Google} Native Client},
+ booktitle = {Proceedings of the Twenty-Second International Conference on Architectural Support for Programming Languages and Operating Systems},
+ series = {ASPLOS '17},
+ year = {2017},
+ isbn = {978-1-4503-4465-4},
+ location = {Xi'an, China},
+ pages = {313--326},
+ numpages = {14},
+ xurl = {http://doi.acm.org/10.1145/3037697.3037754},
+ doi = {10.1145/3037697.3037754},
+ acmid = {3037754},
+ publisher = {ACM},
+ xaddress = {New York, NY, USA},
+ keywords = {assembly, bounded verification, data-driven verification, equivalence checking, native client, superoptimization, verification, x86-64},
+}
+
+@InProceedings{kedar13,
+author="Namjoshi, Kedar S.
+and Zuck, Lenore D.",
+editor="Logozzo, Francesco
+and F{\"a}hndrich, Manuel",
+title="Witnessing Program Transformations",
+booktitle="Static Analysis",
+year="2013",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="304--323",
+abstract="We study two closely related problems: (a) showing that a program transformation is correct and (b) propagating an invariant through a program transformation. The second problem is motivated by an application which utilizes program invariants to improve the quality of compiler optimizations. We show that both problems can be addressed by augmenting a transformation with an auxiliary witness generation procedure. For every application of the transformation, the witness generator constructs a relation which guarantees the correctness of that instance. We show that stuttering simulation is a sound and complete witness format. Completeness means that, under mild conditions, every correct transformation induces a stuttering simulation witness which is strong enough to prove that the transformation is correct. A witness is self-contained, in that its correctness is independent of the optimization procedure which generates it. Any invariant of a source program can be turned into an invariant of the target of a transformation by suitably composing it with its witness. Stuttering simulations readily compose, forming a single witness for a sequence of transformations. Witness generation is simpler than a formal proof of correctness, and it is comprehensive, unlike the heuristics used for translation validation. We define witnesses for a number of standard compiler optimizations; this exercise shows that witness generators can be implemented quite easily.",
+isbn="978-3-642-38856-9"
+}
