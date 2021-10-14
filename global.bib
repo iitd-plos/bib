@@ -5201,13 +5201,13 @@ series = {FAST'11}
 
 @misc{fragmentation_in_pmem,
   TITLE = {Persistent allocator design - fragmentation},
-  howpublished = "\url{https://pmem.io/2016/02/25/fragmentation.html}"
+  howpublished = "\url{https://pmem.io/2016/02/25/fragmentation.html}",
   key = {Persistent allocator design - fragmentation},
 }
 
 @article{hinfs,
-author = {Chen, Youmin and Shu, Jiwu and Ou, Jiaxin and Lu, Youyou},
 title = {HiNFS: A Persistent Memory File System with Both Buffering and Direct-Access},
+author = {Chen, Youmin and Shu, Jiwu and Ou, Jiaxin and Lu, Youyou},
 year = {2018},
 issue_date = {April 2018},
 publisher = {Association for Computing Machinery},
@@ -5217,21 +5217,6 @@ number = {1},
 issn = {1553-3077},
 url = {https://doi.org/10.1145/3204454},
 doi = {10.1145/3204454},
-abstract = {Persistent memory provides data persistence at main memory with emerging non-volatile
-main memories (NVMMs). Recent persistent memory file systems aggressively use direct
-access, which directly copy data between user buffer and the storage layer, to avoid
-the double-copy overheads through the OS page cache. However, we observe they all
-suffer from slow writes due to NVMMs’ asymmetric read-write performance and much slower
-performance than DRAM.In this article, we propose HiNFS, a high-performance file system
-for non-volatile main memory, to combine both buffering and direct access for fine-grained
-file system operations. HiNFS uses an NVMM-aware Write Buffer to buffer the lazy-persistent
-file writes in DRAM, while performing direct access to NVMM for eager-persistent file
-writes. It directly reads file data from both DRAM and NVMM, by ensuring read consistency
-with a combination of the DRAM Block Index and Cacheline Bitmap to track the latest
-data between DRAM and NVMM. HiNFS also employs a Buffer Benefit Model to identify
-the eager-persistent file writes before issuing I/Os. Evaluations show that HiNFS
-significantly improves throughput by up to 184% and reduces execution time by up to
-64%comparing with state-of-the-art persistent memory file systems PMFS and EXT4-DAX.},
 journal = {ACM Trans. Storage},
 month = apr,
 articleno = {4},
@@ -5438,4 +5423,32 @@ address="Berlin, Heidelberg",
 pages="304--323",
 abstract="We study two closely related problems: (a) showing that a program transformation is correct and (b) propagating an invariant through a program transformation. The second problem is motivated by an application which utilizes program invariants to improve the quality of compiler optimizations. We show that both problems can be addressed by augmenting a transformation with an auxiliary witness generation procedure. For every application of the transformation, the witness generator constructs a relation which guarantees the correctness of that instance. We show that stuttering simulation is a sound and complete witness format. Completeness means that, under mild conditions, every correct transformation induces a stuttering simulation witness which is strong enough to prove that the transformation is correct. A witness is self-contained, in that its correctness is independent of the optimization procedure which generates it. Any invariant of a source program can be turned into an invariant of the target of a transformation by suitably composing it with its witness. Stuttering simulations readily compose, forming a single witness for a sequence of transformations. Witness generation is simpler than a formal proof of correctness, and it is comprehensive, unlike the heuristics used for translation validation. We define witnesses for a number of standard compiler optimizations; this exercise shows that witness generators can be implemented quite easily.",
 isbn="978-3-642-38856-9"
+}
+
+@inproceedings{wort,
+author = {Lee, Se Kwon and Lim, K. Hyun and Song, Hyunsub and Nam, Beomseok and Noh, Sam H.},
+title = {WORT: Write Optimal Radix Tree for Persistent Memory Storage Systems},
+year = {2017},
+isbn = {9781931971362},
+publisher = {USENIX Association},
+address = {USA},
+abstract = {Recent interest in persistent memory (PM) has stirred development of index structures
+that are efficient in PM. Recent such developments have all focused on variations
+of the B-tree. In this paper, we show that the radix tree, which is another less popular
+indexing structure, can be more appropriate as an efficient PM indexing structure.
+This is because the radix tree structure is determined by the prefix of the inserted
+keys and also does not require tree rebalancing operations and node granularity updates.
+However, the radix tree as-is cannot be used in PM. As another contribution, we present
+three radix tree variants, namely, WORT (Write Optimal Radix Tree), WOART (Write Optimal
+Adaptive Radix Tree), and ART+CoW. Of these, the first two are optimal for PM in the
+sense that they only use one 8-byte failure-atomic write per update to guarantee the
+consistency of the structure and do not require any duplicate copies for logging or
+CoW. Extensive performance studies show that our proposed radix tree variants perform
+considerable better than recently proposed B-tree variants for PM such NVTree, wB+Tree,
+and FPTree for synthetic workloads as well as in implementations within Memcached.},
+booktitle = {Proceedings of the 15th Usenix Conference on File and Storage Technologies},
+pages = {257–270},
+numpages = {14},
+location = {Santa clara, CA, USA},
+series = {FAST'17}
 }
