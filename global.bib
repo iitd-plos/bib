@@ -5211,13 +5211,13 @@ series = {FAST'11}
 
 @misc{fragmentation_in_pmem,
   TITLE = {Persistent allocator design - fragmentation},
-  howpublished = "\url{https://pmem.io/2016/02/25/fragmentation.html}"
+  howpublished = "\url{https://pmem.io/2016/02/25/fragmentation.html}",
   key = {Persistent allocator design - fragmentation},
 }
 
 @article{hinfs,
-author = {Chen, Youmin and Shu, Jiwu and Ou, Jiaxin and Lu, Youyou},
 title = {HiNFS: A Persistent Memory File System with Both Buffering and Direct-Access},
+author = {Chen, Youmin and Shu, Jiwu and Ou, Jiaxin and Lu, Youyou},
 year = {2018},
 issue_date = {April 2018},
 publisher = {Association for Computing Machinery},
@@ -5227,21 +5227,6 @@ number = {1},
 issn = {1553-3077},
 url = {https://doi.org/10.1145/3204454},
 doi = {10.1145/3204454},
-abstract = {Persistent memory provides data persistence at main memory with emerging non-volatile
-main memories (NVMMs). Recent persistent memory file systems aggressively use direct
-access, which directly copy data between user buffer and the storage layer, to avoid
-the double-copy overheads through the OS page cache. However, we observe they all
-suffer from slow writes due to NVMMs’ asymmetric read-write performance and much slower
-performance than DRAM.In this article, we propose HiNFS, a high-performance file system
-for non-volatile main memory, to combine both buffering and direct access for fine-grained
-file system operations. HiNFS uses an NVMM-aware Write Buffer to buffer the lazy-persistent
-file writes in DRAM, while performing direct access to NVMM for eager-persistent file
-writes. It directly reads file data from both DRAM and NVMM, by ensuring read consistency
-with a combination of the DRAM Block Index and Cacheline Bitmap to track the latest
-data between DRAM and NVMM. HiNFS also employs a Buffer Benefit Model to identify
-the eager-persistent file writes before issuing I/Os. Evaluations show that HiNFS
-significantly improves throughput by up to 184% and reduces execution time by up to
-64%comparing with state-of-the-art persistent memory file systems PMFS and EXT4-DAX.},
 journal = {ACM Trans. Storage},
 month = apr,
 articleno = {4},
@@ -5450,6 +5435,34 @@ abstract="We study two closely related problems: (a) showing that a program tran
 isbn="978-3-642-38856-9"
 }
 
+@inproceedings{wort,
+author = {Lee, Se Kwon and Lim, K. Hyun and Song, Hyunsub and Nam, Beomseok and Noh, Sam H.},
+title = {WORT: Write Optimal Radix Tree for Persistent Memory Storage Systems},
+year = {2017},
+isbn = {9781931971362},
+publisher = {USENIX Association},
+address = {USA},
+abstract = {Recent interest in persistent memory (PM) has stirred development of index structures
+that are efficient in PM. Recent such developments have all focused on variations
+of the B-tree. In this paper, we show that the radix tree, which is another less popular
+indexing structure, can be more appropriate as an efficient PM indexing structure.
+This is because the radix tree structure is determined by the prefix of the inserted
+keys and also does not require tree rebalancing operations and node granularity updates.
+However, the radix tree as-is cannot be used in PM. As another contribution, we present
+three radix tree variants, namely, WORT (Write Optimal Radix Tree), WOART (Write Optimal
+Adaptive Radix Tree), and ART+CoW. Of these, the first two are optimal for PM in the
+sense that they only use one 8-byte failure-atomic write per update to guarantee the
+consistency of the structure and do not require any duplicate copies for logging or
+CoW. Extensive performance studies show that our proposed radix tree variants perform
+considerable better than recently proposed B-tree variants for PM such NVTree, wB+Tree,
+and FPTree for synthetic workloads as well as in implementations within Memcached.},
+booktitle = {Proceedings of the 15th Usenix Conference on File and Storage Technologies},
+pages = {257–270},
+numpages = {14},
+location = {Santa clara, CA, USA},
+series = {FAST'17}
+}
+
 @inproceedings{debuginfoValidation,
 author = {Li, Yuanbo and Ding, Shuo and Zhang, Qirun and Italiano, Davide},
 year = {2020},
@@ -5484,10 +5497,7 @@ doi = {10.5555/647169.718156}
 author = {Tice, Caroline M.},
 year = {2000},
 month = {2},
-% pages = {},
 title = {Non-Transparent Debugging of Optimized Code},
-% isbn = {},
-% doi = {10.5555/894940}
 url = {https://dl.acm.org/doi/book/10.5555/894940}
 }
 
@@ -5497,7 +5507,6 @@ year = {1983},
 month = {8},
 pages = {159–172},
 title = {An interactive high-level debugger for control-flow optimized programs},
-% isbn = {},
 doi = {10.1145/1006142.1006183}
 }
 
@@ -5507,7 +5516,6 @@ year = {1982},
 month = {7},
 pages = {323-344},
 title = {Symbolic Debugging of Optimized Code},
-% isbn = {},
 doi = {10.1145/357172.357173}
 }
 
@@ -5515,10 +5523,7 @@ doi = {10.1145/357172.357173}
 author = {Berger, Lutz and Wismüller, Roland},
 year = {1992},
 month = {12},
-% pages = {},
 title = {Source-Level Debugging of Optimized Programs Using Data Flow Analysis},
-% isbn = {},
-% doi = {}
 url = {http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.43.2997}
 }
 
@@ -5538,7 +5543,6 @@ year = {1994},
 month = {5},
 pages = {387-427},
 title = {Debugging optimized code without being misled},
-% isbn = {},
 doi = {10.1145/177492.177517}
 }
 
@@ -5568,7 +5572,6 @@ year = {1994},
 month = {8},
 pages = {278-289},
 title = {Debugging of globally optimized programs using data flow analysis},
-% isbn = {089791662X},
 doi = {10.1145/178243.178430}
 }
 
@@ -5597,15 +5600,16 @@ location = {Virtual, USA},
 series = {ASPLOS 2021}
 }
 
+@misc(i386abi,
+    title="{S}ystem {V} {A}pplication {B}inary {I}nterface. Intel386 Architecture Processor Supplement. Version 1.0",
+    howpublished = "\url{https://uclibc.org/docs/psABI-i386.pdf}"
+}
+
 @book{knr,
-  added-at = {2012-01-15T16:33:06.000+0100},
-  author = {Ritchie, D.M. and Kernighan, B.W.},
-  biburl = {https://www.bibsonomy.org/bibtex/2f44e34b9f0ed628d0f89c06bc8756165/msteele},
-  interhash = {15167041cbcd208a397a63c35af734cb},
-  intrahash = {f44e34b9f0ed628d0f89c06bc8756165},
-  keywords = {C},
-  publisher = {Bell Laboratories},
-  timestamp = {2012-01-15T16:33:06.000+0100},
-  title = {{The C programming language}},
-  year = 1988
+author = {Kernighan, Brian W. and Ritchie, Dennis M.},
+title = {The  C Programming Language},
+year = {1988},
+isbn = {0131103709},
+publisher = {Prentice Hall Professional Technical Reference},
+edition = {2nd},
 }
