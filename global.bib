@@ -307,10 +307,23 @@
   year = "2000"
 }
 
-@techreport{souper17,
-  author = "Sasnauskas, Raimondas and Chen, Yang and Collingbourne, Peter and Ketema, Jeroen and Taneja, Jubi and Regehr, John",
-  title = "{S}ouper: {A} {S}ynthesizing {S}uperoptimizer",
-  URL = "https://arxiv.org/abs/1711.04422",
+@article{souper,
+  author    = {Raimondas Sasnauskas and
+               Yang Chen and
+               Peter Collingbourne and
+               Jeroen Ketema and
+               Jubi Taneja and
+               John Regehr},
+  title     = {Souper: {A} Synthesizing Superoptimizer},
+  journal   = {CoRR},
+  volume    = {abs/1711.04422},
+  year      = {2017},
+  url       = {http://arxiv.org/abs/1711.04422},
+  eprinttype = {arXiv},
+  eprint    = {1711.04422},
+  timestamp = {Mon, 02 Aug 2021 08:40:02 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-1711-04422.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
 @techreport{ transmeta_crusoe:chip,
@@ -4394,8 +4407,8 @@ numpages = {27}
 
 @inproceedings{lore,
 author={Z. {Chen} and Z. {Gong} and J. J. {Szaday} and D. C. {Wong} and D. {Padua} and A. {Nicolau} and A. V. {Veidenbaum} and N. {Watkinson} and Z. {Sura} and S. {Maleki} and J. {Torrellas} and G. {DeJong}},
-booktitle={2017 IEEE International Symposium on Workload Characterization (IISWC)}, 
-title={LORE: A loop repository for the evaluation of compilers}, 
+booktitle={2017 IEEE International Symposium on Workload Characterization (IISWC)},
+title={LORE: A loop repository for the evaluation of compilers},
 year={2017},
 volume={},
 number={},
@@ -4416,8 +4429,8 @@ pages={219-228},
 
 @inproceedings{lore,
   author={Z. {Chen} and Z. {Gong} and J. J. {Szaday} and D. C. {Wong} and D. {Padua} and A. {Nicolau} and A. V. {Veidenbaum} and N. {Watkinson} and Z. {Sura} and S. {Maleki} and J. {Torrellas} and G. {DeJong}},
-  booktitle={2017 IEEE International Symposium on Workload Characterization (IISWC)}, 
-  title={LORE: A loop repository for the evaluation of compilers}, 
+  booktitle={2017 IEEE International Symposium on Workload Characterization (IISWC)},
+  title={LORE: A loop repository for the evaluation of compilers},
   year={2017},
   volume={},
   number={},
@@ -4519,8 +4532,8 @@ series = {ASPLOS ’20}
 
 @inproceedings{perforatedPage,
   author={C. H. {Park} and S. {Cha} and B. {Kim} and Y. {Kwon} and D. {Black-Schaffer} and J. {Huh}},
-  booktitle={2020 ACM/IEEE 47th Annual International Symposium on Computer Architecture (ISCA)}, 
-  title={Perforated Page: Supporting Fragmented Memory Allocation for Large Pages}, 
+  booktitle={2020 ACM/IEEE 47th Annual International Symposium on Computer Architecture (ISCA)},
+  title={Perforated Page: Supporting Fragmented Memory Allocation for Large Pages},
   year={2020},
   volume={},
   number={},
@@ -4529,8 +4542,8 @@ series = {ASPLOS ’20}
 
 @inproceedings{contiguity_memvirt,
   author={C. {Alverti} and S. {Psomadakis} and V. {Karakostas} and J. {Gandhi} and K. {Nikas} and G. {Goumas} and N. {Koziris}},
-  booktitle={2020 ACM/IEEE 47th Annual International Symposium on Computer Architecture (ISCA)}, 
-  title={Enhancing and Exploiting Contiguity for Fast Memory Virtualization}, 
+  booktitle={2020 ACM/IEEE 47th Annual International Symposium on Computer Architecture (ISCA)},
+  title={Enhancing and Exploiting Contiguity for Fast Memory Virtualization},
   year={2020},
   volume={},
   number={},
@@ -4555,8 +4568,8 @@ series = {ASPLOS ’20}
 
 @inproceedings{tailored_page_sizes,
   author={F. {Guvenilir} and Y. N. {Patt}},
-  booktitle={2020 ACM/IEEE 47th Annual International Symposium on Computer Architecture (ISCA)}, 
-  title={Tailored Page Sizes}, 
+  booktitle={2020 ACM/IEEE 47th Annual International Symposium on Computer Architecture (ISCA)},
+  title={Tailored Page Sizes},
   year={2020},
   volume={},
   number={},
@@ -4887,7 +4900,7 @@ isbn="978-3-319-12736-1"
  publisher = {ACM},
  address = {New York, NY, USA},
  keywords = {cuckoo hashing, scalability, software switch},
-} 
+}
 
 @inproceedings{Kim:2012:PBC:2349896.2349910,
  author = {Kim, Joongi and Huh, Seonggu and Jang, Keon and Park, KyoungSoo and Moon, Sue},
@@ -4936,7 +4949,7 @@ isbn="978-3-319-12736-1"
  publisher = {ACM},
  address = {New York, NY, USA},
  keywords = {composite data structures, synthesis},
-} 
+}
 
 @inproceedings{concurrent_data_representation_synthesis,
  author = {Hawkins, Peter and Aiken, Alex and Fisher, Kathleen and Rinard, Martin and Sagiv, Mooly},
@@ -5465,32 +5478,52 @@ series = {FAST'17}
 
 @inproceedings{debuginfoValidation,
 author = {Li, Yuanbo and Ding, Shuo and Zhang, Qirun and Italiano, Davide},
+title = {Debug Information Validation for Optimized Code},
 year = {2020},
-month = {6},
-pages = {1052-1065},
-title = {Debug information validation for optimized code},
 isbn = {9781450376136},
 doi = {10.1145/3385412.3386020}
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3385412.3386020},
+doi = {10.1145/3385412.3386020},
+booktitle = {Proceedings of the 41st ACM SIGPLAN Conference on Programming Language Design and Implementation},
+pages = {1052–1065},
+numpages = {14},
+keywords = {Optimizing Compilers, Debug Information},
+location = {London, UK},
+series = {PLDI 2020}
 }
 
 @inproceedings{debuggingDebuggers,
-author = {Di Luna, Giuseppe Antonio and Italiano, Davide and Massarelli, Luca and Österlund, Sebastian and Giuffrida, Cristiano and Querzoni, Leonardo},
+author = {Di Luna, Giuseppe Antonio and Italiano, Davide and Massarelli, Luca and \"{O}sterlund, Sebastian and Giuffrida, Cristiano and Querzoni, Leonardo},
+title = {Who’s Debugging the Debuggers? Exposing Debug Information Bugs in Optimized Binaries},
 year = {2021},
-month = {4},
-pages = {1034-1045},
-title = {Who’s debugging the debuggers? exposing debug information bugs in optimized binaries},
 isbn = {9781450383172},
-doi = {10.1145/3445814.3446695}
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3445814.3446695},
+doi = {10.1145/3445814.3446695},
+booktitle = {Proceedings of the 26th ACM International Conference on Architectural Support for Programming Languages and Operating Systems},
+pages = {1034–1045},
+numpages = {12},
+keywords = {Verification, Debug Information, Optimized Binaries},
+location = {Virtual, USA},
+series = {ASPLOS 2021}
 }
 
 @inproceedings{fulldoc,
-author = {Jaramillo, Clara and Gupta, Rajiv and Soffa, Mary Lou},
-year = {2000},
-month = {6},
-pages = {240-259},
-title = {FULLDOC: A Full Reporting Debugger for Optimized Code},
-isbn = {3540676686},
-doi = {10.5555/647169.718156}
+author="Jaramillo, Clara
+and Gupta, Rajiv
+and Soffa, Mary Lou",
+editor="Palsberg, Jens",
+title="FULLDOC: A Full Reporting Debugger for Optimized Code",
+booktitle="Static Analysis",
+year="2000",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="240--259",
+abstract="As compilers increasingly rely on optimizations to achieve high performance, the effectiveness of source level debuggers for optimized code continues to falter. Even if values of source variables are computed in the execution of the optimized code, source level debuggers of optimized code are unable to always report the expected values of source variables at breakpoints.",
+isbn="978-3-540-45099-3"
 }
 
 @inproceedings{non-transparent-2000,
@@ -5503,86 +5536,155 @@ url = {https://dl.acm.org/doi/book/10.5555/894940}
 
 @inproceedings{interactive-high-level,
 author = {Zellweger, Polle T.},
+title = {An Interactive High-Level Debugger for Control-Flow Optimized Programs},
 year = {1983},
-month = {8},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1006147.1006183},
+doi = {10.1145/1006147.1006183},
+abstract = {The transformations performed by an optimizing compiler have traditionally impeded interactive debugging in source language terms. A prototype system called Navigator has been developed for debugging optimized programs written in Cedar, an Algol-like language. Navigator can be used to monitor program execution flow in the presence of two optimizations: inline procedure expansion and cross-jumping (merging identical tails of code paths that join). This paper describes the problems that these two optimizations create for debugging and Navigator's solutions to these problems. The selected approach collects extra information during the optimization phases of compilation. At runtime, Navigator uses the additional information to hide the effects of the optimizations from the programmer.},
+booktitle = {Proceedings of the Symposium on High-Level Debugging},
 pages = {159–172},
-title = {An interactive high-level debugger for control-flow optimized programs},
-doi = {10.1145/1006142.1006183}
+numpages = {14},
+location = {Pacific Grove, California},
+series = {SIGSOFT '83}
 }
 
-@inproceedings{symbolic-debugging,
+@article{symbolic-debugging,
 author = {Hennessy, John},
-year = {1982},
-month = {7},
-pages = {323-344},
 title = {Symbolic Debugging of Optimized Code},
-doi = {10.1145/357172.357173}
+year = {1982},
+issue_date = {July 1982},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {4},
+number = {3},
+url = {https://doi.org/10.1145/357172.357173},
+doi = {10.1145/357172.357173},
+journal = {ACM Trans. Program. Lang. Syst.},
+month = {jul},
+pages = {323–344},
+numpages = {22}
 }
 
-@inproceedings{source-level-debugging,
-author = {Berger, Lutz and Wismüller, Roland},
-year = {1992},
-month = {12},
-title = {Source-Level Debugging of Optimized Programs Using Data Flow Analysis},
-url = {http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.43.2997}
+@article{source-level-debugging,
+  title={Source-level debugging of optimized programs using data flow analysis},
+  author={Berger, Lutz and Wism{\"u}ller, Roland},
+  year={1992},
+  publisher={Citeseer}
 }
 
 @inproceedings{new-approach-to-debugging-optimized-code,
 author = {Brooks, Gary and Hansen, Gilbert J. and Simmons, Steve},
+title = {A New Approach to Debugging Optimized Code},
 year = {1992},
-month = {7},
-pages = {1-11},
-title = {A new approach to debugging optimized code},
 isbn = {0897914759},
-doi = {10.1145/143103.143108}
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/143095.143108},
+doi = {10.1145/143095.143108},
+abstract = {Debugging optimized code is a desirable capability not provided by most current debuggers. Users are forced to debug the unoptimized code when a bug occurs in the optimized version. Current research offers partial solutions for a small class of optimizations, but not a unified approach that handles a wide range of optimizations, such as the sophisticated optimizations performed by supercomputer compilers.The trend with current research is to make the effects of optimization transparent, i.e., provide the same behavior as that of the unoptimized program. We contend that this approach is neither totally feasible nor entirely desirable. Instead, we propose a new approach based on the premise that one should be able to debug the optimized code. This implies mapping the current  state of execution back to the original source, tracking the location of variables, and mapping compiler-synthesized variables back to user-defined induction variables. To aid the user in understanding program behavior, various visual means are provided, e.g., different forms of highlighting and annotating of the source/assembly code. While this unavoidably requires the user to have a basic understanding of the optimizations performed, it permits the user to see what is actually happening, infer the optimizations performed, and detect bugs. An example illustrates the effectiveness of visual feedback.To support conventional debugger functionality for optimized code, the compiler must generate additional information. Current compiler-debugger interfaces (CDIs) were neither  designed to handle this new information nor are they extensible in a straight forward manner. Therefore, a new CDI was designed that supports providing visual feedback and the debugging of optimized code. This paper specifies the details of a new CDI and relates each feature back to the debugger functionality it supports.},
+booktitle = {Proceedings of the ACM SIGPLAN 1992 Conference on Programming Language Design and Implementation},
+pages = {1–11},
+numpages = {11},
+location = {San Francisco, California, USA},
+series = {PLDI '92}
 }
 
-@inproceedings{debugging-without-misled,
+@article{debugging-without-misled,
 author = {Copperman, Max},
+title = {Debugging Optimized Code without Being Misled},
 year = {1994},
-month = {5},
-pages = {387-427},
-title = {Debugging optimized code without being misled},
-doi = {10.1145/177492.177517}
+issue_date = {May 1994},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {16},
+number = {3},
+issn = {0164-0925},
+url = {https://doi.org/10.1145/177492.177517},
+doi = {10.1145/177492.177517},
+abstract = {Correct optimization can change the behavior of an incorrect program; therefore at times it is necessary to debug optimized code. However, optimizing compilers produce code that impedes source-level debugging.Optimization can cause an inconsistency between where the user expects a breakpoint to be located and the breakpoint's actual location. This article describes a mapping between statements and breakpoint locations that ameliorates this problem. The mapping enables debugger behavior on optimized code that approximates debugger behavior on unoptimized code sufficiently closely for the user to use traditional debugging strategies.Optimization can also cause the value of a variable to be noncurrent—to differ from the value that would be predicted by a close reading of the source code. This article presents a method of determining when this has occurred, and shows how a debugger can describe the relevant effects of optimization. The determination method is more general than previously published methods; it handles global optimization and many flow graph transformations, and it is not tightly coupled to optimizations performed by a particular compiler. Necessary compiler support is also described.},
+journal = {ACM Trans. Program. Lang. Syst.},
+month = {may},
+pages = {387–427},
+numpages = {41}
 }
+
 
 @inproceedings{scalar,
 author = {Adl-Tabatabai, Ali-Reza and Gross, Thomas},
+title = {Source-Level Debugging of Scalar Optimized Code},
 year = {1996},
-month = {5},
-pages = {33-43},
-title = {Source-level debugging of scalar optimized code},
 isbn = {0897917952},
-doi = {10.1145/231379.231388}
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/231379.231388},
+doi = {10.1145/231379.231388},
+abstract = {Although compiler optimizations play a crucial role in the performance of modern computer systems, debugger technology has lagged behind in its support of optimization. Yet debugging the unoptimized translation is often impossible or futile, so handling of code optimizations in the debugger is necessary. But compiler optimizations make it difficult to provide source-level debugger functionality: Global optimizations can cause the runtime value of a variable to be inconsistent with the source-level value expected at a breakpoint; such variables are called endangered variables. A debugger must detect and warn the user of endangered variables otherwise the user may draw incorrect conclusions about the program. This paper presents a new algorithm for detecting variables that are endangered due to global scalar optimization. Our approach provides more precise classifications of variables and is still simpler than past approaches. We have implemented and evaluated our techniques in the context of the cmcc optimizing C compiler. We describe the compiler extensions necessary to perform the required bookkeeping of compiler optimization. We present measurements of the effect of optimizations on a debugger's ability to present the expected values of variables to the user.},
+booktitle = {Proceedings of the ACM SIGPLAN 1996 Conference on Programming Language Design and Implementation},
+pages = {33–43},
+numpages = {11},
+location = {Philadelphia, Pennsylvania, USA},
+series = {PLDI '96}
 }
+
+
 
 @inproceedings{comparison-checking,
 author = {Jaramillo, Clara and Gupta, Rajiv and Soffa, Mary Lou},
-year = {1999},
-month = {8},
-pages = {268-284},
 title = {Comparison Checking: An Approach to Avoid Debugging of Optimized Code},
-isbn = {978-3-540-48166-9},
-doi = {0.1007/3-540-48166-4_17}
+year = {1999},
+isbn = {3540665382},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg},
+abstract = {We present a novel approach to avoid the debugging of optimized code through comparison checking. In the technique presented, both the unoptimized and optimized versions of an application program are executed, and computed values are compared to ensure the behaviors of the two versions are the same under the given input. If the values are different, the comparison checker displays where in the application program the differences occurred and what optimizations were involved. The user can utilize this information and a conventional debugger to determine if an error is in the unoptimized code. If the error is in the optimized code, the user can turn off those offending optimizations and leave the other optimizations in place. We implemented our comparison checking scheme, which executes the unoptimized and optimized versions of C programs, and ran experiments that demonstrate the approach is effective and practical.},
+booktitle = {Proceedings of the 7th European Software Engineering Conference Held Jointly with the 7th ACM SIGSOFT International Symposium on Foundations of Software Engineering},
+pages = {268–284},
+numpages = {17},
+location = {Toulouse, France},
+series = {ESEC/FSE-7}
 }
 
 @inproceedings{globally-opt-dfa,
-author = {Wismüller, Roland},
+author = {Wism\"{u}ller, Roland},
+title = {Debugging of Globally Optimized Programs Using Data Flow Analysis},
 year = {1994},
-month = {8},
-pages = {278-289},
-title = {Debugging of globally optimized programs using data flow analysis},
-doi = {10.1145/178243.178430}
+isbn = {089791662X},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/178243.178430},
+doi = {10.1145/178243.178430},
+abstract = {Advanced processor and machine architectures need optimizing compilers to be efficiently programmed in high level languages. Therefore the need for source level debuggers that can handle optimized programs is rising. One difficulty in debugging optimized code arises from the problem to determine the values of source code variables. To ensure correct debugger behaviour with optimized programs, the debugger not only has to determine the variable's storage location or associated register. It must also verify that the variable is current, i.e. the value determined from that location is really the value that the variable would have in unoptimized code. We will deduce requirements on algorithms for currentness determination and present an algorithm meeting this requirements that is more general than previous work. We will also give first experiences with an implementation. To our knowledge this is the first implementation of a currentness determination algorithm for globally optimized code.},
+booktitle = {Proceedings of the ACM SIGPLAN 1994 Conference on Programming Language Design and Implementation},
+pages = {278–289},
+numpages = {12},
+location = {Orlando, Florida, USA},
+series = {PLDI '94}
 }
 
 @inproceedings{dynamic-deopt,
-author = {Hölzle, Urs and Chambers, Craig and Ungar, David},
+author = {H\"{o}lzle, Urs and Chambers, Craig and Ungar, David},
+title = {Debugging Optimized Code with Dynamic Deoptimization},
 year = {1992},
-month = {7},
-pages = {32-43},
-title = {Debugging optimized code with dynamic deoptimization},
 isbn = {0897914759},
-doi = {10.1145/143095.143114}
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/143095.143114},
+doi = {10.1145/143095.143114},
+abstract = {SELF's debugging system provides complete source-level debugging (expected behavior) with globally optimized code. It shields the debugger from optimizations performed by the compiler by dynamically deoptimizing code on demand. Deoptimization only affects the procedure activations that are actively being debugged; all other code runs at full speed. Deoptimization requires the compiler to supply debugging information at discrete interrupt points; the compiler can still perform extensive optimizations between interrupt points without affecting debuggability. At the same time, the inability to interrupt between interrupt points is invisible to the user. Our debugging system also handles programming changes during debugging. Again, the system provides expected behavior: it is possible to change a running program and immediately observe the effects of the change. Dynamic deoptimization transforms old compiled code (which may contain inlined copies of the old version of the changed procedure) into new versions reflecting the current source-level state. To the best of our knowledge, SELF is the first practical system providing full expected behavior with globally optimized code.},
+booktitle = {Proceedings of the ACM SIGPLAN 1992 Conference on Programming Language Design and Implementation},
+pages = {32–43},
+numpages = {12},
+location = {San Francisco, California, USA},
+series = {PLDI '92}
+}
+
+@book{rref,
+  author = {Anton, Howard and Rorres, Chris},
+  isbn = {9781118434413 1118434412 9781118474228 1118474228},
+  keywords = {linear.algebra matrix textbook},
+  publisher = {Wiley},
+  title = {Elementary Linear Algebra: Applications Version},
 }
 
 @inproceedings{llvm_tv21,
