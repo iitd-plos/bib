@@ -1713,7 +1713,7 @@
 
 @misc{counter_demo,
 	TITLE = {{ [ONLINE-DEMO] Online demo of the equivalence checker.}},
-	howpublished = "\url{http://compiler.ai/}",
+	howpublished = "\url{https://compiler.ai/demo/}",
   year = {2020},
 }
 
@@ -4394,15 +4394,6 @@ pages={219-228},
   year={2020},
 }
 
-@inproceedings{lore,
-  author={Z. {Chen} and Z. {Gong} and J. J. {Szaday} and D. C. {Wong} and D. {Padua} and A. {Nicolau} and A. V. {Veidenbaum} and N. {Watkinson} and Z. {Sura} and S. {Maleki} and J. {Torrellas} and G. {DeJong}},
-  booktitle={2017 IEEE International Symposium on Workload Characterization (IISWC)},
-  title={LORE: A loop repository for the evaluation of compilers},
-  year={2017},
-  volume={},
-  number={},
-  pages={219-228},
-}
 
 @inproceedings{eqcheck_crypto,
   title={Automatic equivalence checking for assembly implementations of cryptography libraries},
@@ -5863,3 +5854,119 @@ numpages = {14}
   key = {Sorav Bansal's Courses},
 }
 
+@InProceedings{SimAbs,
+author="Fedyukovich, Grigory
+and Gurfinkel, Arie
+and Sharygina, Natasha",
+editor="Davis, Martin
+and Fehnker, Ansgar
+and McIver, Annabelle
+and Voronkov, Andrei",
+title="Automated Discovery of Simulation Between Programs",
+booktitle="Logic for Programming, Artificial Intelligence, and Reasoning",
+year="2015",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="606--621",
+abstract="The paper presents SimAbs, the first fully automated SMT-based approach to synthesize an abstraction of one program (called target) that simulates another program (called source). SimAbs iteratively traverses the search space of existential abstractions of the target and choses the strongest abstraction among them that simulates the source. Deciding whether a given relation is a simulation relation is reduced to solving validity of {\$}{\$}{\backslash}forall {\backslash}exists {\$}{\$}-formulas iteratively. We present a novel algorithm for dealing with such formulas using an incremental SMT solver. In addition to deciding validity, our algorithm extracts witnessing Skolem relations which further drive simulation synthesis in SimAbs. Our evaluation confirms that SimAbs is able to efficiently discover both, simulations and abstractions, for C programs from the Software Verification Competition.",                                                                                                                                   isbn="978-3-662-48899-7"
+}
+
+@inproceedings{esop13,
+ author = {Sharma, Rahul and Gupta, Saurabh and Hariharan, Bharath and Aiken, Alex and Liang, Percy and Nori, Aditya V.},
+ title = {A Data Driven Approach for Algebraic Loop Invariants},
+ booktitle = {Proceedings of the 22Nd European Conference on Programming Languages and Systems},
+ series = {ESOP'13},
+ year = {2013},
+ isbn = {978-3-642-37035-9},
+ location = {Rome, Italy},
+ pages = {574--592},
+ numpages = {19},
+ url = {http://dx.doi.org/10.1007/978-3-642-37036-6_31},
+ doi = {10.1007/978-3-642-37036-6\_31},
+ acmid = {2450310},
+ publisher = {Springer-Verlag},
+ address = {Berlin, Heidelberg},
+ keywords = {SMT, loop invariants, non-linear},
+}
+
+
+@inproceedings{autoregressverify14,
+  title={Automating regression verification},
+  author={Felsing, Dennis and Grebing, Sarah and Klebanov, Vladimir and R{\"u}mmer, Philipp and Ulbrich, Mattias},
+  booktitle={Proceedings of the 29th ACM/IEEE international conference on Automated software engineering},
+  pages={349--360},
+  year={2014},
+  organization={ACM}
+}
+
+@article{posthat,
+ author = {Thakur, A. and Lal, A. and Lim, J. and Reps, T.},
+ title = {PostHat and All That},
+ journal = {Electron. Notes Theor. Comput. Sci.},
+ issue_date = {February 2015},
+ volume = {311},
+ number = {C},
+ month = feb,
+ year = {2015},
+ issn = {1571-0661},
+ pages = {15--32},
+ numpages = {18},
+ url = {http://dx.doi.org/10.1016/j.entcs.2015.02.003},
+ doi = {10.1016/j.entcs.2015.02.003},
+ acmid = {2803851},
+ publisher = {Elsevier Science Publishers B. V.},
+ address = {Amsterdam, The Netherlands, The Netherlands},
+ keywords = {abstract interpretation, decision procedures, invariant generation, symbolic abstraction},
+}
+
+
+@InProceedings{abstractInv,
+author="Garoche, Pierre-Lo{\"i}c
+and Kahsai, Temesghen
+and Tinelli, Cesare",
+editor="Brat, Guillaume
+and Rungta, Neha
+and Venet, Arnaud",
+title="Incremental Invariant Generation Using Logic-Based Automatic Abstract Transformers",
+booktitle="NASA Formal Methods",
+year="2013",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="139--154",
+abstract="Formal analysis tools for system models often require or benefit from the availability of auxiliary system invariants. Abstract interpretation is currently one of the best approaches for discovering useful invariants, in particular numerical ones. However, its application is limited by two orthogonal issues: (i) developing an abstract interpretation is often non-trivial; each transfer function of the system has to be represented at the abstract level, depending on the abstract domain used; (ii) with precise but costly abstract domains, the information computed by the abstract interpreter can be used only once a post fix point has been reached; this may take a long time for large systems or when widening is delayed to improve precision. We propose a new, completely automatic, method to build abstract interpreters which, in addition, can provide sound invariants of the system under analysis before reaching the end of the post fix point computation. In effect, such interpreters act as on-the-fly invariant generators and can be used by other tools such as logic-based model checkers. We present some experimental results that provide initial evidence of the practical usefulness of our method.",
+isbn="978-3-642-38088-4"
+}
+
+@InProceedings{CEGAR,
+author="Clarke, Edmund
+and Grumberg, Orna
+and Jha, Somesh
+and Lu, Yuan
+and Veith, Helmut",
+editor="Emerson, E. Allen
+and Sistla, Aravinda Prasad",
+title="Counterexample-Guided Abstraction Refinement ",
+booktitle="Computer Aided Verification",
+year="2000",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="154--169",
+abstract="We present an automatic iterative abstraction-refinement methodology in which the initial abstract model is generated by an automatic analysis of the control structures in the program to be verified. Abstract models may admit erroneous (or ``spurious'') counterexamples. We devise new symbolic techniques which analyze such counterexamples and refine the abstract model correspondingly. The refinement algorithm keeps the size of the abstract state space small due to the use of abstraction functions which distinguish many degrees of abstraction for each program variable. We describe an implementation of our methodology in NuSMV. Practical experiments including a large Fujitsu IP core design with about 500 latches and 10000 lines of SMV code confirm the effectiveness of our approach.",
+isbn="978-3-540-45047-4"
+}
+
+
+@inproceedings{IC3,
+author = {Somenzi, Fabio and Bradley, Aaron R.},
+title = {IC3: Where Monolithic and Incremental Meet},
+year = {2011},
+isbn = {9780983567813},
+publisher = {FMCAD Inc},
+address = {Austin, Texas},
+abstract = {IC3 is an approach to the verification of safety properties based on relative induction. It is incremental in the sense that instead of focusing on proving one assertion, it builds a sequence of small, relatively easy lemmas. These lemmas are in the form of clauses that are derived from counterexamples to induction and that are inductive relative to reachability assumptions. At the same time, IC3 progressively refines approximations of the states reachable in given numbers of steps. These approximations, also made up of clauses, are among the assumptions used to support the inductive reasoning, while their strengthening relies on the inductive clauses themselves. This interplay of the incremental and monolithic approaches lends IC3 efficiency and flexibility and produces high-quality property-driven abstractions. In contrast to other SAT-based approaches, IC3 performs very many, very inexpensive queries. This is another consequence of the incrementality of the algorithm and is a key to its ability to be implemented in highly parallel fashion.},
+booktitle = {Proceedings of the International Conference on Formal Methods in Computer-Aided Design},
+pages = {3–8},
+numpages = {6},
+location = {Austin, Texas},
+series = {FMCAD '11}
+}
