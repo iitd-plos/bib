@@ -50,6 +50,16 @@
 	key = "The {L}{L}{V}{M} {C}ompiler {I}nfrastructure {P}roject",
 }
 
+@misc{ack_compiler,
+	title = "The {A}msterdam {C}ompiler {K}it",
+	howpublished = "\url{https://tack.sourceforge.net/}",
+	key = "The {A}msterdam {C}ompiler {K}it",
+}
+
+@misc{i386abi,
+    title="{S}ystem {V} {A}pplication {B}inary {I}nterface. Intel386 Architecture Processor Supplement. Version 1.0",
+    howpublished = "\url{https://uclibc.org/docs/psABI-i386.pdf}",
+}
 
 
 @inproceedings{ gso:pldi92,
@@ -3896,6 +3906,15 @@ abstract="Program equivalence checking is a fundamental problem in computer scie
 isbn="978-3-319-94144-8"
 }
 
+@phdthesis{manjeet_thesis,
+ author = {Dahiya, Manjeet},
+ advisor = {Bansal, Sorav},
+ title = {Black-box Equivalence Checking across Compiler Transformations},
+ year = {2018},
+ publisher = {Indian Institute of Technology Delhi},
+ address = {Delhi, India},
+}
+
 @phdthesis{armando_thesis,
  author = {Solar-Lezama, Armando},
  advisor = {Bodik, Rastislav},
@@ -5340,11 +5359,21 @@ series = {PLDI '13}
 }
 
 @inproceedings{alive2,
-  title={Alive2: bounded translation validation for LLVM},
-  author={Lopes, Nuno P and Lee, Juneyoung and Hur, Chung-Kil and Liu, Zhengyang and Regehr, John},
-  booktitle={Proceedings of the 42nd ACM SIGPLAN International Conference on Programming Language Design and Implementation (PLDI)},
-  pages={65--79},
-  year={2021}
+author = {Lopes, Nuno P. and Lee, Juneyoung and Hur, Chung-Kil and Liu, Zhengyang and Regehr, John},
+title = {Alive2: Bounded Translation Validation for LLVM},
+year = {2021},
+isbn = {9781450383912},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3453483.3454030},
+doi = {10.1145/3453483.3454030},
+abstract = {We designed, implemented, and deployed Alive2: a bounded translation validation tool for the LLVM compiler’s intermediate representation (IR). It limits resource consumption by, for example, unrolling loops up to some bound, which means there are circumstances in which it misses bugs. Alive2 is designed to avoid false alarms, is fully automatic through the use of an SMT solver, and requires no changes to LLVM. By running Alive2 over LLVM’s unit test suite, we discovered and reported 47 new bugs, 28 of which have been fixed already. Moreover, our work has led to eight patches to the LLVM Language Reference—the definitive description of the semantics of its IR—and we have participated in numerous discussions with the goal of clarifying ambiguities and fixing errors in these semantics. Alive2 is open source and we also made it available on the web, where it has active users from the LLVM community.},
+booktitle = {Proceedings of the 42nd ACM SIGPLAN International Conference on Programming Language Design and Implementation},
+pages = {65–79},
+numpages = {15},
+keywords = {Translation Validation, IR Semantics, Automatic Software Verification, Compilers},
+location = {Virtual, Canada},
+series = {PLDI 2021}
 }
 
 @inproceedings{diffy,
@@ -6039,4 +6068,302 @@ month = {sep},
 pages = {654–660},
 numpages = {7},
 keywords = {portability, compiler, interpreter, translator}
+}
+
+@inproceedings{Nguyen2012,
+ author = {Nguyen, ThanhVu and Kapur, Deepak and Weimer, Westley and Forrest, Stephanie},
+ title = {Using Dynamic Analysis to Discover Polynomial and Array Invariants},
+ booktitle = {Proceedings of the 34th International Conference on Software Engineering},
+ series = {ICSE '12},
+ year = {2012},
+ isbn = {978-1-4673-1067-3},
+ location = {Zurich, Switzerland},
+ pages = {683--693},
+ numpages = {11},
+ url = {http://dl.acm.org/citation.cfm?id=2337223.2337304},
+ acmid = {2337304},
+ publisher = {IEEE Press},
+ address = {Piscataway, NJ, USA},
+} 
+
+@InProceedings{dilling2018,
+author="Humenberger, Andreas
+and Jaroschek, Maximilian
+and Kov{\'a}cs, Laura",
+editor="Dillig, Isil
+and Palsberg, Jens",
+title="Invariant Generation for Multi-Path Loops with Polynomial Assignments",
+booktitle="Verification, Model Checking, and Abstract Interpretation",
+year="2018",
+publisher="Springer International Publishing",
+address="Cham",
+pages="226--246",
+abstract="Program analysis requires the generation of program properties expressing conditions to hold at intermediate program locations. When it comes to programs with loops, these properties are typically expressed as loop invariants. In this paper we study a class of multi-path program loops with numeric variables, in particular nested loops with conditionals, where assignments to program variables are polynomial expressions over program variables. We call this class of loops extended P-solvable and introduce an algorithm for generating all polynomial invariants of such loops. By an iterative procedure employing Gr{\"o}bner basis computation, our approach computes the polynomial ideal of the polynomial invariants of each program path and combines these ideals sequentially until a fixed point is reached. This fixed point represents the polynomial ideal of all polynomial invariants of the given extended P-solvable loop. We prove termination of our method and show that the maximal number of iterations for reaching the fixed point depends linearly on the number of program variables and the number of inner loops. In particular, for a loop with m program variables and r conditional branches we prove an upper bound of {\$}{\$}m{\backslash}cdot r{\$}{\$}iterations. We implemented our approach in the Aligator software package. Furthermore, we evaluated it on 18 programs with polynomial arithmetic and compared it to existing methods in invariant generation. The results show the efficiency of our approach.",
+isbn="978-3-319-73721-8"
+}
+
+@article{reps2018,
+ author = {Kincaid, Zachary and Cyphert, John and Breck, Jason and Reps, Thomas},
+ title = {Non-linear Reasoning for Invariant Synthesis},
+ journal = {Proc. ACM Program. Lang.},
+ issue_date = {January 2018},
+ volume = {2},
+ number = {POPL},
+ month = dec,
+ year = {2017},
+ issn = {2475-1421},
+ pages = {54:1--54:33},
+ articleno = {54},
+ numpages = {33},
+ url = {http://doi.acm.org/10.1145/3158142},
+ doi = {10.1145/3158142},
+ acmid = {3158142},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {Invariant generation, Operational calculus, Recurrence relation},
+}
+
+@InProceedings{eldarica,
+author="Hojjat, Hossein
+and Kone{\v{c}}n{\'y}, Filip
+and Garnier, Florent
+and Iosif, Radu
+and Kuncak, Viktor
+and R{\"u}mmer, Philipp",
+editor="Giannakopoulou, Dimitra
+and M{\'e}ry, Dominique",
+title="A Verification Toolkit for Numerical Transition Systems",
+booktitle="FM 2012: Formal Methods",
+year="2012",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="247--251",
+abstract="This paper presents a publicly available toolkit and a benchmark suite for rigorous verification of Integer Numerical Transition Systems (INTS), which can be viewed as control-flow graphs whose edges are annotated by Presburger arithmetic formulas. We present Flata and Eldarica, two verification tools for INTS. The Flata system is based on precise acceleration of the transition relation, while the Eldarica system is based on predicate abstraction with interpolation-based counterexample-driven refinement. The Eldarica verifier uses the Princess theorem prover as a sound and complete interpolating prover for Presburger arithmetic. Both systems can solve several examples for which previous approaches failed, and present a useful baseline for verifying integer programs. The infrastructure is a starting point for rigorous benchmarking, competitions, and standardized communication between tools.",
+isbn="978-3-642-32759-9"
+}
+
+@inproceedings{datachc,
+ author = {Zhu, He and Magill, Stephen and Jagannathan, Suresh},
+ title = {A Data-driven CHC Solver},
+ booktitle = {Proceedings of the 39th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+ series = {PLDI 2018},
+ year = {2018},
+ isbn = {978-1-4503-5698-5},
+ location = {Philadelphia, PA, USA},
+ pages = {707--721},
+ numpages = {15},
+ url = {http://doi.acm.org/10.1145/3192366.3192416},
+ doi = {10.1145/3192366.3192416},
+ acmid = {3192416},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {Constrained Horn Clauses (CHCs), Data-Driven Analysis, Invariant Inference, Program Verification},
+} 
+
+@InProceedings{kedar97,
+author="Namjoshi, Kedar S.",
+editor="Ramesh, S.
+and Sivakumar, G.",
+title="A simple characterization of stuttering bisimulation",
+booktitle="Foundations of Software Technology and Theoretical Computer Science",
+year="1997",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="284--296",
+abstract="Showing equivalence of two systems at different levels of abstraction often entails mapping a single step in one system to a sequence of steps in the other, where the relevant state information does not change until the last step. In [BCG 88,dNV 90], bisimulations that take into account such ``stuttering'' are formulated. These definitions are, however, difficult to use in proofs of bisimulation, as they often require one to exhibit a finite, but unbounded sequence of transitions to match a single transition; thus introducing a large number of proof obligations. We present an alternative formulation of bisimulation under stuttering, in terms of a ranking function over a well-founded set. It has the desirable property, shared with strong bisimulation [Mil 90], that it requires matching single transitions only, which considerably reduces the number of proof obligations. This makes proofs of bisimulation short, and easier to demonstrate and understand. We show that the new formulation is equivalent to the original one, and illustrate its use with non-trivial examples that have infinite state spaces and exhibit unbounded stuttering.",
+isbn="978-3-540-69659-9"
+}
+
+@article{SPgraph,
+author = {Valdes, Jacobo and Tarjan, Robert E. and Lawler, Eugene L.},
+title = {The Recognition of Series Parallel Digraphs},
+journal = {SIAM Journal on Computing},
+volume = {11},
+number = {2},
+pages = {298-313},
+year = {1982},
+doi = {10.1137/0211023},
+URL = {https://doi.org/10.1137/0211023},
+eprint = {https://doi.org/10.1137/0211023},
+abstract = { We present a linear-time algorithm to recognize the class of vertex series-parallel (VSP) digraphs. Our method is based on the relationship between VSP digraphs and the class of edge series-parallel multidigraphs. As a byproduct of our analysis, we obtain efficient methods to compute the transitive closure and transitive reduction of VSP digraphs, and to test isomorphism of minimal VSP digraphs. }
+}
+
+
+@inproceedings{barthe11,
+author = {Barthe, Gilles and Crespo, Juan Manuel and Kunz, C\'{e}sar},
+title = {Relational Verification Using Product Programs},
+year = {2011},
+isbn = {9783642214363},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg},
+abstract = {Relational program logics are formalisms for specifying and verifying properties about two programs or two runs of the same program. These properties range from correctness of compiler optimizations or equivalence between two implementations of an abstract data type, to properties like non-interference or determinism. Yet the current technology for relational verification remains underdeveloped. We provide a general notion of product program that supports a direct reduction of relational verification to standard verification. We illustrate the benefits of our method with selected examples, including non-interference, standard loop optimizations, and a state-of-the-art optimization for incremental computation. All examples have been verified using the Why tool.},
+booktitle = {Proceedings of the 17th International Conference on Formal Methods},
+pages = {200–214},
+numpages = {15},
+location = {Limerick, Ireland},
+series = {FM'11}
+}
+
+@article{relverify19,
+author = {Chen, Jia and Wei, Jiayi and Feng, Yu and Bastani, Osbert and Dillig, Isil},
+title = {Relational Verification Using Reinforcement Learning},
+year = {2019},
+issue_date = {October 2019},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {3},
+number = {OOPSLA},
+url = {https://doi.org/10.1145/3360567},
+doi = {10.1145/3360567},
+abstract = {Relational verification aims to prove properties that relate a pair of programs or two different runs of the same program. While relational properties (e.g., equivalence, non-interference) can be verified by reducing them to standard safety, there are typically many possible reduction strategies, only some of which result in successful automated verification. Motivated by this problem, we propose a novel relational verification algorithm that learns useful reduction strategies using reinforcement learning. Specifically, we show how to formulate relational verification as a Markov Decision Process (MDP) and use reinforcement learning to synthesize an optimal policy for the underlying MDP. The learned policy is then used to guide the search for a successful verification strategy. We have implemented this approach in a tool called Coeus and evaluate it on two benchmark suites. Our evaluation shows that Coeus solves significantly more problems within a given time limit compared to multiple baselines, including two state-of-the-art relational verification tools.},
+journal = {Proc. ACM Program. Lang.},
+month = {oct},
+articleno = {141},
+numpages = {30},
+keywords = {reinforcement learning, proof search, relational property, verification, neural network, policy gradient}
+}
+
+@inproceedings{ic3vmcai11,
+author = {Bradley, Aaron R.},
+title = {SAT-Based Model Checking without Unrolling},
+year = {2011},
+isbn = {9783642182747},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg},
+abstract = {A new form of SAT-based symbolic model checking is described. Instead of unrolling the transition relation, it incrementally generates clauses that are inductive relative to (and augment) stepwise approximate reachability information. In this way, the algorithm gradually refines the property, eventually producing either an inductive strengthening of the property or a counterexample trace. Our experimental studies show that induction is a powerful tool for generalizing the unreachability of given error states: it can refine away many states at once, and it is effective at focusing the proof search on aspects of the transition system relevant to the property. Furthermore, the incremental structure of the algorithm lends itself to a parallel implementation.},
+booktitle = {Proceedings of the 12th International Conference on Verification, Model Checking, and Abstract Interpretation},
+pages = {70–87},
+numpages = {18},
+location = {Austin, TX, USA},
+series = {VMCAI'11}
+}
+
+@inproceedings{pdr,
+author = {Een, Niklas and Mishchenko, Alan and Brayton, Robert},
+title = {Efficient Implementation of Property Directed Reachability},
+year = {2011},
+isbn = {9780983567813},
+publisher = {FMCAD Inc},
+address = {Austin, Texas},
+abstract = {Last spring, in March 2010, Aaron Bradley published the first truly new bit-level symbolic model checking algorithm since Ken McMillan's interpolation based model checking procedure introduced in 2003. Our experience with the algorithm suggests that it is stronger than interpolation on industrial problems, and that it is an important algorithm to study further. In this paper, we present a simplified and faster implementation of Bradley's procedure, and discuss our successful and unsuccessful attempts to improve it.},
+booktitle = {Proceedings of the International Conference on Formal Methods in Computer-Aided Design},
+pages = {125–134},
+numpages = {10},
+location = {Austin, Texas},
+series = {FMCAD '11}
+}
+
+@InProceedings{vmcai04,
+author="Reps, Thomas
+and Sagiv, Mooly
+and Yorsh, Greta",
+editor="Steffen, Bernhard
+and Levi, Giorgio",
+title="Symbolic Implementation of the Best Transformer",
+booktitle="Verification, Model Checking, and Abstract Interpretation",
+year="2004",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="252--266",
+abstract="This paper shows how to achieve, under certain conditions, abstract-interpretation algorithms that enjoy the best possible precision for a given abstraction. The key idea is a simple process of successive approximation that makes repeated calls to a decision procedure, and obtains the best abstract value for a set of concrete stores that are represented symbolically, using a logical formula.",
+isbn="978-3-540-24622-0"
+}
+
+@article{wp1975,
+author = {Dijkstra, Edsger W.},
+title = {Guarded Commands, Nondeterminacy and Formal Derivation of Programs},
+journal = {Commun. ACM},
+issue_date = {Aug. 1975},
+volume = {18},
+number = {8},
+month = aug,
+year = {1975},
+issn = {0001-0782},
+pages = {453--457},
+numpages = {5},
+doi = {10.1145/360933.360975},
+acmid = {360975},
+publisher = {ACM},
+address = {New York, NY, USA},
+}
+
+  
+@InProceedings{seahorn,
+author="Gurfinkel, Arie
+and Kahsai, Temesghen
+and Komuravelli, Anvesh
+and Navas, Jorge A.",
+editor="Kroening, Daniel
+and P{\u{a}}s{\u{a}}reanu, Corina S.",
+title="The SeaHorn Verification Framework",
+booktitle="Computer Aided Verification",
+year="2015",
+publisher="Springer International Publishing",
+address="Cham",
+pages="343--361",
+abstract="In this paper, we present SeaHorn, a software verification framework. The key distinguishing feature of SeaHorn is its modular design that separates the concerns of the syntax of the programming language, its operational semantics, and the verification semantics. SeaHorn encompasses several novelties: it (a) encodes verification conditions using an efficient yet precise inter-procedural technique, (b) provides flexibility in the verification semantics to allow different levels of precision, (c) leverages the state-of-the-art in software model checking and abstract interpretation for verification, and (d) uses Horn-clauses as an intermediate language to represent verification conditions which simplifies interfacing with multiple verification tools based on Horn-clauses. SeaHorn provides users with a powerful verification tool and researchers with an extensible and customizable framework for experimenting with new software verification techniques. The effectiveness and scalability of SeaHorn are demonstrated by an extensive experimental evaluation using benchmarks from SV-COMP 2015 and real avionics code.",
+isbn="978-3-319-21690-4"
+}
+
+@InProceedings{cpachecker,
+author="Beyer, Dirk
+and Keremoglu, M. Erkan",
+editor="Gopalakrishnan, Ganesh
+and Qadeer, Shaz",
+title="CPAchecker: A Tool for Configurable Software Verification",
+booktitle="Computer Aided Verification",
+year="2011",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="184--190",
+abstract="Configurable software verification is a recent concept for expressing different program analysis and model checking approaches in one single formalism. This paper presents CPAchecker, a tool and framework that aims at easy integration of new verification components. Every abstract domain, together with the corresponding operations, implements the interface of configurable program analysis (CPA). The main algorithm is configurable to perform a reachability analysis on arbitrary combinations of existing CPAs. In software verification, it takes a considerable amount of effort to convert a verification idea into actual experimental results --- we aim at accelerating this process. We hope that researchers find it convenient and productive to implement new verification ideas and algorithms using this flexible and easy-to-extend platform, and that it advances the field by making it easier to perform practical experiments. The tool is implemented in Java and runs as command-line tool or as eclipse plug-in. CPAchecker implements CPAs for several abstract domains. We evaluate the efficiency of the current version of our tool on software-verification benchmarks from the literature, and compare it with other state-of-the-art model checkers. CPAchecker is an open-source toolkit and publicly available.",
+isbn="978-3-642-22110-1"
+}
+
+@InProceedings{tacas04,
+author="Clarke, Edmund
+and Kroening, Daniel
+and Lerda, Flavio",
+editor="Jensen, Kurt
+and Podelski, Andreas",
+title="A Tool for Checking ANSI-C Programs",
+booktitle="Tools and Algorithms for the Construction and Analysis of Systems",
+year="2004",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="168--176",
+abstract="We present a tool for the formal verification of ANSI-C programs using Bounded Model Checking (BMC). The emphasis is on usability: the tool supports almost all ANSI-C language features, including pointer constructs, dynamic memory allocation, recursion, and the float and double data types. From the perspective of the user, the verification is highly automated: the only input required is the BMC bound. The tool is integrated into a graphical user interface. This is essential for presenting long counterexample traces: the tool allows stepping through the trace in the same way a debugger allows stepping through a program.",
+isbn="978-3-540-24730-2"
+}
+
+@InProceedings{veriabs,
+author="Darke, Priyanka
+and Prabhu, Sumanth
+and Chimdyalwar, Bharti
+and Chauhan, Avriti
+and Kumar, Shrawan
+and Basakchowdhury, Animesh
+and Venkatesh, R.
+and Datar, Advaita
+and Medicherla, Raveendra Kumar",
+editor="Beyer, Dirk
+and Huisman, Marieke",
+title="VeriAbs: Verification by Abstraction and Test Generation",
+booktitle="Tools and Algorithms for the Construction and Analysis of Systems",
+year="2018",
+publisher="Springer International Publishing",
+address="Cham",
+pages="457--462",
+abstract="VeriAbs is a portfolio software verifier for ANSI-C programs. To prove properties with better efficiency and scalability, this version implements output abstraction with k-induction in the presence of resets. VeriAbs now generates post conditions over the abstraction to find invariants by applying Z3's tactics of quantifier elimination. These invariants are then used to generate validation witnesses. To find errors in the absence of known program bounds, VeriAbs searches for property violating inputs by applying random test generation with fuzz testing for a better scalability as compared to bounded model checking.",
+isbn="978-3-319-89963-3"
+}
+
+@inproceedings{aliveFP,
+author = {Menendez, David and Nagarakatte, Santosh and Gupta, Aarti},
+year = {2016},
+month = {09},
+pages = {317-337},
+title = {Alive-FP: Automated Verification of Floating Point Based Peephole Optimizations in LLVM},
+isbn = {978-3-662-53412-0},
+doi = {10.1007/978-3-662-53413-7_16}
 }
