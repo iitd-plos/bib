@@ -6368,3 +6368,249 @@ title = {Alive-FP: Automated Verification of Floating Point Based Peephole Optim
 isbn = {978-3-662-53412-0},
 doi = {10.1007/978-3-662-53413-7_16}
 }
+
+@inproceedings{allocation_site_abstraction82,
+author = {Jones, Neil D. and Muchnick, Steven S.},
+title = {A Flexible Approach to Interprocedural Data Flow Analysis and Programs with Recursive Data Structures},
+year = {1982},
+isbn = {0897910656},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/582153.582161},
+doi = {10.1145/582153.582161},
+abstract = {A new approach to data flow analysis of procedural programs and programs with recursive data structures is described. The method depends on simulation of the interpreter for the subject programming language using a retrieval function to approximate a program's data structures.},
+booktitle = {Proceedings of the 9th ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+pages = {66–74},
+numpages = {9},
+location = {Albuquerque, New Mexico},
+series = {POPL '82}
+}
+
+@inproceedings{allocation_site_abstraction90,
+author = {Chase, David R. and Wegman, Mark and Zadeck, F. Kenneth},
+title = {Analysis of Pointers and Structures},
+year = {1990},
+isbn = {0897913647},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/93542.93585},
+doi = {10.1145/93542.93585},
+booktitle = {Proceedings of the ACM SIGPLAN 1990 Conference on Programming Language Design and Implementation},
+pages = {296–310},
+numpages = {15},
+location = {White Plains, New York, USA},
+series = {PLDI '90}
+}
+
+@inproceedings{allocation_site_abstraction06,
+author = {Balakrishnan, Gogul and Reps, Thomas},
+title = {Recency-Abstraction for Heap-Allocated Storage},
+year = {2006},
+isbn = {3540377565},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg},
+url = {https://doi.org/10.1007/11823230_15},
+doi = {10.1007/11823230_15},
+abstract = {In this paper, we present an abstraction for heap-allocated storage, called the recency-abstraction, that allows abstract-interpretation algorithms to recover some non-trivial information for heap-allocated data objects. As an application of the recency-abstraction, we show how it can resolve virtual-function calls in stripped executables (i.e., executables from which debugging information has been removed). This approach succeeded in resolving 55% of virtual-function call-sites, whereas previous tools for analyzing executables fail to resolve any of the virtual-function call-sites.},
+booktitle = {Proceedings of the 13th International Conference on Static Analysis},
+pages = {221–239},
+numpages = {19},
+location = {Seoul, Korea},
+series = {SAS'06}
+}
+
+@phdthesis{kildall_thesis,
+author = {Kildall, Gary Arlen},
+title = {Global Expression Optimization during Compilation},
+year = {1972},
+publisher = {University of Washington},
+address = {USA},
+note = {AAI7228616}
+}
+
+@inproceedings{interprocedural_may_alias94,
+author = {Deutsch, Alain},
+title = {Interprocedural May-Alias Analysis for Pointers: Beyond k-Limiting},
+year = {1994},
+isbn = {089791662X},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/178243.178263},
+doi = {10.1145/178243.178263},
+booktitle = {Proceedings of the ACM SIGPLAN 1994 Conference on Programming Language Design and Implementation},
+pages = {230–241},
+numpages = {12},
+location = {Orlando, Florida, USA},
+series = {PLDI '94}
+}
+
+@article{interprocedural_pointsto94,
+author = {Emami, Maryam and Ghiya, Rakesh and Hendren, Laurie J.},
+title = {Context-Sensitive Interprocedural Points-to Analysis in the Presence of Function Pointers},
+year = {1994},
+issue_date = {June 1994},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {29},
+number = {6},
+issn = {0362-1340},
+url = {https://doi.org/10.1145/773473.178264},
+doi = {10.1145/773473.178264},
+journal = {SIGPLAN Not.},
+month = {jun},
+pages = {242–256},
+numpages = {15}
+}
+
+@article{context_sensitive_pointer_analysis95,
+author = {Wilson, Robert P. and Lam, Monica S.},
+title = {Efficient Context-Sensitive Pointer Analysis for C Programs},
+year = {1995},
+issue_date = {June 1995},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {30},
+number = {6},
+issn = {0362-1340},
+url = {https://doi.org/10.1145/223428.207111},
+doi = {10.1145/223428.207111},
+journal = {SIGPLAN Not.},
+month = {jun},
+pages = {1–12},
+numpages = {12}
+}
+
+@inproceedings{shape_analysis96,
+author = {Ghiya, Rakesh and Hendren, Laurie J.},
+title = {Is It a Tree, a DAG, or a Cyclic Graph? A Shape Analysis for Heap-Directed Pointers in C},
+year = {1996},
+isbn = {0897917693},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/237721.237724},
+doi = {10.1145/237721.237724},
+abstract = {This paper reports on the design and implementation of a practical shape analysis for C. The purpose of the analysis is to aid in the disambiguation of heap-allocated data structures by estimating the shape (Tree, DAG, or Cyclic Graph) of the data structure accessible from each heap-directed pointer. This shape information can be used to improve dependence testing and in parallelization, and to guide the choice of more complex heap analyses.The method has been implemented as a context-sensitive interprocedural analysis in the McCAT conlpiler. Experimental results and observations are given for 16 benchmark programs. These results show that the analysis gives accurate and useful results for an important group of applications.},
+booktitle = {Proceedings of the 23rd ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+pages = {1–15},
+numpages = {15},
+location = {St. Petersburg Beach, Florida, USA},
+series = {POPL '96}
+}
+
+@article{interprocedural_heap_analysis96,
+author = {Ghiya, Rakesh and Hendren, Laurie J.},
+title = {Connection Analysis: A Practical Interprocedural Heap Analysis for C},
+year = {1996},
+issue_date = {Dec. 1996},
+publisher = {Kluwer Academic Publishers},
+address = {USA},
+volume = {24},
+number = {6},
+issn = {0885-7458},
+abstract = {This paper presents a practical heap analysis technique, connection analysis, that can be used to disambiguate heap accesses in C programs. The technique is designed for analyzing programs that allocate many disjoint objects in the heap such as dynamically-allocated arrays in scientific programs. The method statically estimates connection matrices which encode the connection relationships between all heap-directed pointers at each program point. The results of the analysis can be used by parallelizing compilers to determine when two heap-allocated objects are guaranteed to be disjoint, and thus can be used to improve array dependence and interference analysis. The method has been implemented as a context-sensitive interprocedural analysis in the McCAT optimizing/parallelizing C compiler. Experimental results are given to compare the accuracy of connection analysis versus a conservative estimate based on points-to analysis.},
+journal = {Int. J. Parallel Program.},
+month = {dec},
+pages = {547–578},
+numpages = {32},
+keywords = {Pointer analysis, heap analysis, pointer disambiguation}
+}
+
+@article{efficient_pointsto_whole_program99,
+author = {Liang, Donglin and Harrold, Mary Jean},
+title = {Efficient Points-to Analysis for Whole-Program Analysis},
+year = {1999},
+issue_date = {Nov. 1999},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {24},
+number = {6},
+issn = {0163-5948},
+url = {https://doi.org/10.1145/318774.318943},
+doi = {10.1145/318774.318943},
+journal = {SIGSOFT Softw. Eng. Notes},
+month = {oct},
+pages = {199–215},
+numpages = {17},
+keywords = {points-to graph, aliasing analysis, pointer analysis}
+}
+
+@article{context_sensitive_flow_analysis00,
+author = {F\"{a}hndrich, Manuel and Rehof, Jakob and Das, Manuvir},
+title = {Scalable Context-Sensitive Flow Analysis Using Instantiation Constraints},
+year = {2000},
+issue_date = {May 2000},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {35},
+number = {5},
+issn = {0362-1340},
+url = {https://doi.org/10.1145/358438.349332},
+doi = {10.1145/358438.349332},
+journal = {SIGPLAN Not.},
+month = {may},
+pages = {253–263},
+numpages = {11}
+}
+
+@InProceedings{flow_insensitive_pointsto00,
+author="Foster, Jeffrey S.
+and F{\"a}hndrich, Manuel
+and Aiken, Alexander",
+editor="Palsberg, Jens",
+title="Polymorphic versus Monomorphic Flow-Insensitive Points-To Analysis for C",
+booktitle="Static Analysis",
+year="2000",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="175--198",
+isbn="978-3-540-45099-3"
+}
+
+@inproceedings{parameterized_pointer_info01,
+author = {Liang, Donglin and Harrold, Mary Jean},
+title = {Efficient Computation of Parameterized Pointer Information for Interprocedural Analyses},
+year = {2001},
+isbn = {3540423141},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg},
+booktitle = {Proceedings of the 8th International Symposium on Static Analysis},
+pages = {279–298},
+numpages = {20},
+series = {SAS '01}
+}
+
+@inproceedings{cloning_based_context_sensitive_aa04,
+author = {Whaley, John and Lam, Monica S.},
+title = {Cloning-Based Context-Sensitive Pointer Alias Analysis Using Binary Decision Diagrams},
+year = {2004},
+isbn = {1581138075},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/996841.996859},
+doi = {10.1145/996841.996859},
+booktitle = {Proceedings of the ACM SIGPLAN 2004 Conference on Programming Language Design and Implementation},
+pages = {131–144},
+numpages = {14},
+keywords = {logic programming, program analysis, cloning, binary decision diagrams, inclusion-based, context-sensitive, scalable, Java, pointer analysis, Datalog},
+location = {Washington DC, USA},
+series = {PLDI '04}
+}
+
+@article{llvm_dsa07,
+author = {Lattner, Chris and Lenharth, Andrew and Adve, Vikram},
+title = {Making Context-Sensitive Points-to Analysis with Heap Cloning Practical for the Real World},
+year = {2007},
+issue_date = {June 2007},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {42},
+number = {6},
+issn = {0362-1340},
+url = {https://doi.org/10.1145/1273442.1250766},
+doi = {10.1145/1273442.1250766},
+journal = {SIGPLAN Not.},
+month = {jun},
+pages = {278–289},
+numpages = {12},
+keywords = {static analysis, recursive data structure, field-sensitive, pointer analysis, context-sensitive, interprocedural}
+}
