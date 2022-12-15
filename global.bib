@@ -6598,3 +6598,44 @@ pages = {278–289},
 numpages = {12},
 keywords = {static analysis, recursive data structure, field-sensitive, pointer analysis, context-sensitive, interprocedural}
 }
+
+@article{toplas2012,
+author = {Verdoolaege, Sven and Janssens, Gerda and Bruynooghe, Maurice},
+title = {Equivalence Checking of Static Affine Programs Using Widening to Handle Recurrences},
+year = {2012},
+issue_date = {October 2012},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {34},
+number = {3},
+issn = {0164-0925},
+url = {https://doi.org/10.1145/2362389.2362390},
+doi = {10.1145/2362389.2362390},
+abstract = {Designers often apply manual or semi-automatic loop and data transformations on array- and loop-intensive programs to improve performance. It is crucial that such transformations preserve the functionality of the program. This article presents an automatic method for constructing equivalence proofs for the class of static affine programs. The equivalence checking is performed on a dependence graph abstraction and uses a new approach based on widening to find the proper induction hypotheses for reasoning about recurrences. Unlike transitive-closure-based approaches, this widening approach can also handle nonuniform recurrences. The implementation is publicly available and is the first of its kind to fully support commutative operations.},
+journal = {ACM Trans. Program. Lang. Syst.},
+month = {nov},
+articleno = {11},
+numpages = {35},
+keywords = {recurrences, polytope model, equivalence checking, Commutativity, widening}
+}
+
+@article{hornICE,
+author = {Ezudheen, P. and Neider, Daniel and D'Souza, Deepak and Garg, Pranav and Madhusudan, P.},
+title = {Horn-ICE Learning for Synthesizing Invariants and Contracts},
+year = {2018},
+issue_date = {November 2018},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {2},
+number = {OOPSLA},
+url = {https://doi.org/10.1145/3276501},
+doi = {10.1145/3276501},
+abstract = {We design learning algorithms for synthesizing invariants using Horn implication counterexamples (Horn-ICE), extending the ICE-learning model. In particular, we describe a decision-tree learning algorithm that learns from nonlinear Horn-ICE samples, works in polynomial time, and uses statistical heuristics to learn small trees that satisfy the samples. Since most verification proofs can be modeled using nonlinear Horn clauses, Horn-ICE learning is a more robust technique to learn inductive annotations that prove programs correct. Our experiments show that an implementation of our algorithm is able to learn adequate inductive invariants and contracts efficiently for a variety of sequential and concurrent programs.},
+journal = {Proc. ACM Program. Lang.},
+month = {oct},
+articleno = {131},
+numpages = {25},
+keywords = {Software Verification, Constrained Horn Clauses, ICE Learning, Decision Trees}
+}
+
+
