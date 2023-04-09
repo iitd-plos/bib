@@ -3985,9 +3985,10 @@ isbn="978-3-642-40787-1"
  address = {New York, NY, USA},
 }
 
-@misc{sel4,
+@misc{seL4System,
   title="The se{L}4 Microkernel",
   howpublished = "\url{https://sel4.systems/}",
+  title="seL4",
   year={2019},
 }
 
@@ -6654,7 +6655,81 @@ isbn={978-3-030-81688-9}
 @misc{programEquivalenceInCoq,
   TITLE = {{P}rogram {E}quivalence in {C}oq},
   howpublished = "\url{https://softwarefoundations.cis.upenn.edu/plf-current/Equiv.html}",
-  key = {{P}rogram {E}quivalence in {C}oq},
+  key = {Coq:Equiv},
   month = {apr},
   year = {2023},
+}
+
+@inproceedings{seL4,
+author = {Klein, Gerwin and Elphinstone, Kevin and Heiser, Gernot and Andronick, June and Cock, David and Derrin, Philip and Elkaduwe, Dhammika and Engelhardt, Kai and Kolanski, Rafal and Norrish, Michael and Sewell, Thomas and Tuch, Harvey and Winwood, Simon},
+title = {SeL4: Formal Verification of an OS Kernel},
+year = {2009},
+isbn = {9781605587523},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1629575.1629596},
+doi = {10.1145/1629575.1629596},
+abstract = {Complete formal verification is the only known way to guarantee that a system is free of programming errors.We present our experience in performing the formal, machine-checked verification of the seL4 microkernel from an abstract specification down to its C implementation. We assume correctness of compiler, assembly code, and hardware, and we used a unique design approach that fuses formal and operating systems techniques. To our knowledge, this is the first formal proof of functional correctness of a complete, general-purpose operating-system kernel. Functional correctness means here that the implementation always strictly follows our high-level abstract specification of kernel behaviour. This encompasses traditional design and implementation safety properties such as the kernel will never crash, and it will never perform an unsafe operation. It also proves much more: we can predict precisely how the kernel will behave in every possible situation.seL4, a third-generation microkernel of L4 provenance, comprises 8,700 lines of C code and 600 lines of assembler. Its performance is comparable to other high-performance L4 kernels.},
+booktitle = {Proceedings of the ACM SIGOPS 22nd Symposium on Operating Systems Principles},
+pages = {207–220},
+numpages = {14},
+keywords = {microkernel, l4, sel4, isabelle/hol},
+location = {Big Sky, Montana, USA},
+series = {SOSP '09}
+}
+
+@misc{rayWangArticleOnFormalVerification17,
+  TITLE = {{F}ormal {V}erification: {T}he {G}ap between {P}erfect {C}ode and {R}eality},
+  author = {Wang, Ray},
+  howpublished = "\url{https://raywang.tech/2017/12/20/Formal-Verification:-The-Gap-between-Perfect-Code-and-Reality/}",
+  month = {dec},
+  year = {2017},
+}
+
+@inproceedings{fscq,
+author = {Chen, Haogang and Ziegler, Daniel and Chajed, Tej and Chlipala, Adam and Kaashoek, M. Frans and Zeldovich, Nickolai},
+title = {Using Crash Hoare Logic for Certifying the FSCQ File System},
+year = {2015},
+isbn = {9781450338349},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2815400.2815402},
+doi = {10.1145/2815400.2815402},
+abstract = {FSCQ is the first file system with a machine-checkable proof (using the Coq proof assistant) that its implementation meets its specification and whose specification includes crashes. FSCQ provably avoids bugs that have plagued previous file systems, such as performing disk writes without sufficient barriers or forgetting to zero out directory blocks. If a crash happens at an inopportune time, these bugs can lead to data loss. FSCQ's theorems prove that, under any sequence of crashes followed by reboots, FSCQ will recover the file system correctly without losing data.To state FSCQ's theorems, this paper introduces the Crash Hoare logic (CHL), which extends traditional Hoare logic with a crash condition, a recovery procedure, and logical address spaces for specifying disk states at different abstraction levels. CHL also reduces the proof effort for developers through proof automation. Using CHL, we developed, specified, and proved the correctness of the FSCQ file system. Although FSCQ's design is relatively simple, experiments with FSCQ running as a user-level file system show that it is sufficient to run Unix applications with usable performance. FSCQ's specifications and proofs required significantly more work than the implementation, but the work was manageable even for a small team of a few researchers.},
+booktitle = {Proceedings of the 25th Symposium on Operating Systems Principles},
+pages = {18–37},
+numpages = {20},
+location = {Monterey, California},
+series = {SOSP '15}
+}
+
+@InProceedings{dafny,
+author="Leino, K. Rustan M.",
+editor="Clarke, Edmund M.
+and Voronkov, Andrei",
+title="Dafny: An Automatic Program Verifier for Functional Correctness",
+booktitle="Logic for Programming, Artificial Intelligence, and Reasoning",
+year="2010",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="348--370",
+abstract="Traditionally, the full verification of a program's functional correctness has been obtained with pen and paper or with interactive proof assistants, whereas only reduced verification tasks, such as extended static checking, have enjoyed the automation offered by satisfiability-modulo-theories (SMT) solvers. More recently, powerful SMT solvers and well-designed program verifiers are starting to break that tradition, thus reducing the effort involved in doing full verification.",
+isbn="978-3-642-17511-4"
+}
+
+@inproceedings{hope,
+author = {Burstall, R. M. and MacQueen, D. B. and Sannella, D. T.},
+title = {HOPE: An Experimental Applicative Language},
+year = {1980},
+isbn = {9781450373968},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/800087.802799},
+doi = {10.1145/800087.802799},
+abstract = {An applicative language called HOPE is described and discussed. The underlying goal of the design and implementation effort was to produce a very simple programming language which encourages the construction of clear and manipulable programs. HOPE does not include an assignment statement; this is felt to be an important simplification. The user may freely define his own data types, without the need to devise a complicated encoding in terms of low-level types. The language is very strongly typed, and as implemented it incorporates a typechecker which handles polymorphic types and overloaded operators. Functions are defined by a set of recursion equations; the left-hand side of each equation includes a pattern used to determine which equation to use for a given argument. The availability of arbitrary higher-order types allows functions to be defined which 'package' recursion. Lazily-evaluated lists are provided, allowing the use of infinite lists which could be used to provide interactive input/output and concurrency. HOPE also includes a simple modularisation facility which may be used to protect the implementation of an abstract data type.},
+booktitle = {Proceedings of the 1980 ACM Conference on LISP and Functional Programming},
+pages = {136–143},
+numpages = {8},
+location = {Stanford University, California, USA},
+series = {LFP '80}
 }
