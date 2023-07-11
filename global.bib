@@ -6838,3 +6838,32 @@ series = {LFP '80}
   biburl    = {https://dblp.org/rec/conf/osdi/NelsonGTW20.bib},
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
+
+
+@article{traceEquivalence,
+  title={Determinancy→(observation equivalence= trace equivalence)},
+  author={Engelfriet, Joost},
+  journal={Theoretical Computer Science},
+  volume={36},
+  pages={21--25},
+  year={1985},
+  publisher={Elsevier}
+}
+
+@inproceedings{tv_soham_concurrency,
+author = {Chakraborty, Soham and Vafeiadis, Viktor},
+title = {Validating Optimizations of Concurrent C/C++ Programs},
+year = {2016},
+isbn = {9781450337786},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2854038.2854051},
+doi = {10.1145/2854038.2854051},
+abstract = {We present a validator for checking the correctness of LLVM compiler optimizations on C11 programs as far as concurrency is concerned. Our validator checks that optimizations do not change memory accesses in ways disallowed by the C11 and/or LLVM memory models. We use a custom C11 concurrent program generator to trigger multiple LLVM optimizations and evaluate the efficacy of our validator. Our experiments highlighted the difference between the C11 and LLVM memory models, and uncovered a number of previously unknown compilation errors in the LLVM optimizations involving the C11 concurrency primitives.},
+booktitle = {Proceedings of the 2016 International Symposium on Code Generation and Optimization},
+pages = {216–226},
+numpages = {11},
+keywords = {Weak Memory Models, LLVM, C/C++, Concurrency, Translation Validation},
+location = {Barcelona, Spain},
+series = {CGO '16}
+}
